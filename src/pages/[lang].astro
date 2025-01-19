@@ -28,30 +28,26 @@ const t = getString(Astro.params.lang);
 >
   {/* Hero section */}
   <div
-    class="absolute min-h-screen w-full bg-cover bg-top bg-no-repeat"
+    class="absolute left-0 top-0 -z-20 min-h-screen w-full bg-cover bg-top bg-no-repeat"
     style={{ backgroundImage: `url('${cuttingMat.src}')` }}
   >
-    <div class="flex h-screen place-items-center">
-      <div
-        class="mx-auto grid h-[50%] grid-cols-1 place-items-center lg:h-full lg:grid-cols-2 lg:gap-6"
-      >
-        <Image
-          src={banner}
-          alt="Cutting Matter"
-          class="h-48 w-auto sm:h-56 md:h-fit"
-        />
+    <div class="fixed -z-10 w-full pt-52 text-center text-white/70">
+      <h1 class="px-6 py-44 text-3xl font-bold md:text-4xl xl:text-5xl">
+        {t("home.title")}
+      </h1>
+    </div>
+    <div
+      class="flex h-screen w-screen flex-col place-items-center justify-center"
+    >
+      <Image
+        src={banner}
+        alt="Cutting Matter"
+        class="h-48 w-auto sm:h-56 md:h-fit"
+      />
 
-        <div class="flex flex-col justify-items-center">
-          <h1
-            class="bg-contain bg-center bg-no-repeat px-14 py-44 text-xl md:text-2xl xl:text-3xl"
-            style={{ backgroundImage: `url('${rippedPaper.src}')` }}
-          >
-            {t("home.title")}
-          </h1>
-
-          <p class="text-center">{t("home.subtitle")}</p>
-        </div>
-      </div>
+      <p class="pt-16 text-xl text-white md:text-2xl xl:text-3xl">
+        {t("home.subtitle")}
+      </p>
     </div>
   </div>
 </Layout>
