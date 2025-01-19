@@ -1,0 +1,57 @@
+---
+import { listLocales, getString } from "../i18n";
+export function getStaticPaths() {
+  return listLocales().map((locale) => {
+    return {
+      params: {
+        lang: locale,
+      },
+    };
+  });
+}
+
+import { Image } from "astro:assets";
+
+import Layout from "@layouts/Layout.astro";
+
+import cuttingMat from "@assets/cuttingMat.png";
+import banner from "@assets/banner-resized.png";
+import rippedPaper from "@assets/rippedPaper.png";
+
+const t = getString(Astro.params.lang);
+---
+
+<Layout
+  title="Scrapyard TW 2024"
+  longerTitle="Scrapyard 2024 @ TW"
+  bodyClass="bg-[#44716f]"
+>
+  {/* Hero section */}
+  <div
+    class="absolute min-h-screen w-full bg-cover bg-top bg-no-repeat"
+    style={{ backgroundImage: `url('${cuttingMat.src}')` }}
+  >
+    <div class="flex h-screen place-items-center">
+      <div
+        class="mx-auto grid h-[50%] grid-cols-1 place-items-center lg:h-full lg:grid-cols-2 lg:gap-6"
+      >
+        <Image
+          src={banner}
+          alt="Cutting Matter"
+          class="h-48 w-auto sm:h-56 md:h-fit"
+        />
+
+        <div class="flex flex-col justify-items-center">
+          <h1
+            class="bg-contain bg-center bg-no-repeat px-14 py-44 text-xl md:text-2xl xl:text-3xl"
+            style={{ backgroundImage: `url('${rippedPaper.src}')` }}
+          >
+            {t("home.title")}
+          </h1>
+
+          <p class="text-center">{t("home.subtitle")}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
