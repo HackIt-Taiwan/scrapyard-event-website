@@ -65,6 +65,73 @@ const t = getString(Astro.params.lang);
           </div>
         </div>
       </div>
+
+      <div class="grid grid-cols-1 gap-6 pt-4 text-center lg:grid-cols-2">
+        <div class="h-[22rem] rounded-xl border-4 border-red-400">
+          <table class="h-full w-full table-fixed drop-shadow-md">
+            <tr class="text-2xl *:py-3">
+              <th>{t("schedule.time")}</th>
+              <th>{t("schedule.event")}</th>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.a")}</td>
+              <td>{t("schedule.day1.event.a")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.b")}</td>
+              <td>{t("schedule.day1.event.b")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.c")}</td>
+              <td>{t("schedule.day1.event.c")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.d")}</td>
+              <td>{t("schedule.day1.event.d")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.e")}</td>
+              <td>{t("schedule.day1.event.e")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.f")}</td>
+              <td>{t("schedule.day1.event.f")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day1.time.g")}</td>
+              <td>{t("schedule.day1.event.g")}</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="w-full table-fixed rounded-2xl border-2 border-red-400">
+            <tr class="text-2xl *:py-3">
+              <th>{t("schedule.time")}</th>
+              <th>{t("schedule.event")}</th>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day2.time.a")}</td>
+              <td>{t("schedule.day2.event.a")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day2.time.b")}</td>
+              <td>{t("schedule.day2.event.b")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day2.time.c")}</td>
+              <td>{t("schedule.day2.event.c")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day2.time.d")}</td>
+              <td>{t("schedule.day2.event.d")}</td>
+            </tr>
+            <tr class="text-lg *:px-6 *:py-1">
+              <td>{t("schedule.day2.time.e")}</td>
+              <td>{t("schedule.day2.event.e")}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </Layout>
