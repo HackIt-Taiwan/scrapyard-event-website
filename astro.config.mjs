@@ -5,5 +5,8 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 
 export default defineConfig({
+  redirects: {
+    "/": "/us/",
+  },
   integrations: [tailwind(), icon()],
 });

@@ -21,18 +21,15 @@ import rippedPaper from "@assets/rippedPaper.png";
 const t = getString(Astro.params.lang);
 ---
 
-<Layout
-  title="Scrapyard TW 2024"
-  longerTitle="Scrapyard 2024 @ TW"
-  bodyClass="bg-[#44716f]"
->
+<Layout title="Scrapyard TW 2024" longerTitle="Scrapyard 2024 @ TW">
   {/* Hero section */}
   <div
-    class="absolute left-0 top-0 -z-20 min-h-screen w-full bg-cover bg-top bg-no-repeat"
+    class="-z-20 min-h-screen bg-cover bg-top bg-no-repeat transition-all duration-500"
+    id="js:hero"
     style={{ backgroundImage: `url('${cuttingMat.src}')` }}
   >
     <div
-      class="flex h-screen w-screen flex-col place-items-center justify-center"
+      class="flex h-screen w-full flex-col place-items-center justify-center"
     >
       <h1
         class="px-6 text-center text-3xl font-bold text-white/60 md:text-4xl xl:text-5xl"
@@ -42,7 +39,7 @@ const t = getString(Astro.params.lang);
       <Image
         src={banner}
         alt="Cutting Matter"
-        class="h-44 w-auto drop-shadow-2xl sm:h-56 md:h-fit"
+        class="h-44 w-auto p-6 drop-shadow-2xl sm:h-56 md:h-fit"
       />
 
       <p class="pt-16 text-center text-xl text-white md:text-2xl xl:text-3xl">
@@ -50,4 +47,42 @@ const t = getString(Astro.params.lang);
       </p>
     </div>
   </div>
+
+  <div class="pb-8 pt-12">
+    <div class="mx-auto max-w-6xl px-6">
+      {/* Content */}
+      <div>
+        <div class="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-3">
+          <div class="rounded-xl bg-green-400 p-8 drop-shadow-md">
+            <p class="text-3xl font-bold">{t("info.col1.date")}</p>
+            <p class="text-xl text-gray-800">{t("info.col1")}</p>
+          </div><div class="rounded-xl bg-blue-400 p-8 drop-shadow-md">
+            <p class="text-3xl font-bold">{t("info.col2.date")}</p>
+            <p class="text-xl text-gray-800">{t("info.col2")}</p>
+          </div><div class="rounded-xl bg-amber-400 p-8 drop-shadow-md">
+            <p class="text-3xl font-bold">{t("info.col3.date")}</p>
+            <p class="text-xl text-gray-800">{t("info.col3")}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<script>
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (window.scrollY > 0) {
+        document
+          .getElementById("js:hero")
+          ?.classList.add("rounded-b-3xl", "md:mx-5");
+      } else {
+        document
+          .getElementById("js:hero")
+          ?.classList.remove("rounded-b-3xl", "md:mx-5");
+      }
+    },
+    true,
+  );
+</script>
