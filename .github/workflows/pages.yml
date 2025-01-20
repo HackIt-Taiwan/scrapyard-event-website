@@ -1,0 +1,50 @@
+name: Deploy site to GitHub pages
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pages-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Setup pnpm and install dependencies
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - name: Setup Node.js runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --strict-peer-dependencies
+      - name: Run page build
+        run: pnpm build
+      - name: Upload pages output to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  pages-deploy:
+    runs-on: ubuntu-latest
+    needs: pages-build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
