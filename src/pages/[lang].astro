@@ -66,9 +66,15 @@ const t = getString(Astro.params.lang);
         </div>
       </div>
 
+      <h2
+        class="border-b-2 border-green-400 pb-3 pt-8 text-3xl font-bold md:text-4xl"
+      >
+        {t("schedule.title")}
+      </h2>
       <div class="grid grid-cols-1 gap-6 pt-4 text-center lg:grid-cols-2">
-        <div class="h-[22rem] rounded-xl border-4 border-red-400">
-          <table class="h-full w-full table-fixed drop-shadow-md">
+        <div class="h-[22rem]">
+          <h3 class="text-xl font-bold md:text-2xl">{t("schedule.day1")}</h3>
+          <table class="h-full w-full table-fixed">
             <tr class="text-2xl *:py-3">
               <th>{t("schedule.time")}</th>
               <th>{t("schedule.event")}</th>
@@ -104,7 +110,8 @@ const t = getString(Astro.params.lang);
           </table>
         </div>
         <div>
-          <table class="w-full table-fixed rounded-2xl border-2 border-red-400">
+          <h3 class="text-xl font-bold md:text-2xl">{t("schedule.day2")}</h3>
+          <table class="w-full table-fixed">
             <tr class="text-2xl *:py-3">
               <th>{t("schedule.time")}</th>
               <th>{t("schedule.event")}</th>
