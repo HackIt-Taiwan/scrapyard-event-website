@@ -4,7 +4,8 @@ export default {
   locale: "us",
   strings: {
     "home.title": "Build stupid S#!T, get stupid prizes!",
-    "home.subtitle": "Coming soon at Taiwan 2025/3/15 - 2025/3/16",
+    "home.subtitle1": "Coming soon",
+    "home.subtitle2": "At 2025/3/15 ~ 2025/3/16",
     "info.col1": "Form open",
     "info.col2": "Form close",
     "info.col3": "Hackathon day 🎉🎉",
