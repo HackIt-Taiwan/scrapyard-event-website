@@ -150,11 +150,11 @@ const t = getString(Astro.params.lang);
       if (window.scrollY > 0) {
         document
           .getElementById("js:hero")
-          ?.classList.add("rounded-b-3xl", "md:mx-5");
+          ?.classList.add("md:rounded-b-3xl", "md:mx-5");
       } else {
         document
           .getElementById("js:hero")
-          ?.classList.remove("rounded-b-3xl", "md:mx-5");
+          ?.classList.remove("md:rounded-b-3xl", "md:mx-5");
       }
     },
     true,
