@@ -13,8 +13,6 @@ export default {
     "info.col2.date": "2025/3/1",
     "info.col3.date": "2025/3/15",
     "schedule.title": "Schedule",
-    "schedule.time": "Time",
-    "schedule.event": "Event",
     "schedule.day1": "Day 1",
     "schedule.day1.time.a": "8：30 ~ 9：00",
     "schedule.day1.time.b": "9：00 ~ 10：00",
@@ -41,5 +39,10 @@ export default {
     "schedule.day2.event.c": "Lunch",
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
+    "about.title": "About us",
+    "about.content":
+      "We are dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. Through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
+    "about.learn.title": "Wants to know more?",
+    "about.learn.link": "Visit our website!",
   },
 } satisfies Locale;

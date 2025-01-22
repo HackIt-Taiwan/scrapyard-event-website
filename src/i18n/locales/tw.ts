@@ -13,8 +13,6 @@ export default {
     "info.col2.date": "2025/3/1",
     "info.col3.date": "2025/3/15",
     "schedule.title": "行程表",
-    "schedule.time": "時間",
-    "schedule.event": "活動",
     "schedule.day1": "第一天",
     "schedule.day1.time.a": "8：30 ~ 9：00",
     "schedule.day1.time.b": "9：00 ~ 10：00",
@@ -41,5 +39,10 @@ export default {
     "schedule.day2.event.c": "午餐",
     "schedule.day2.event.d": "評審評分",
     "schedule.day2.event.e": "頒獎/閉幕式",
+    "about.title": "我們是誰？",
+    "about.content":
+      "我們致力於培養台灣青少年為青少年籌辦黑客松的能力，並在台灣推廣黑客松風氣。透過舉辦活動，培養台灣學生籌辦活動的實務經驗、獨立思考能力，並提升在地學生的程式設計與創新思維。",
+    "about.learn.title": "想知道更多？",
+    "about.learn.link": "到我們的網站看看吧！",
   },
 } satisfies Locale;

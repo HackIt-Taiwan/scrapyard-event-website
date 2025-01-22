@@ -74,40 +74,36 @@ const t = getString(Astro.params.lang);
         {t("schedule.title")}
       </h2>
       <div class="grid grid-cols-1 gap-6 pt-4 text-center lg:grid-cols-2">
-        <div class="h-[22rem]">
+        <div>
           <h3 class="py-4 text-xl font-bold md:text-2xl">
             {t("schedule.day1")}
           </h3>
-          <table class="h-full w-full table-fixed">
-            <tr class="text-2xl *:py-3">
-              <th>{t("schedule.time")}</th>
-              <th>{t("schedule.event")}</th>
-            </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+          <table class="w-full table-fixed">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.a")}</td>
               <td>{t("schedule.day1.event.a")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.b")}</td>
               <td>{t("schedule.day1.event.b")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.c")}</td>
               <td>{t("schedule.day1.event.c")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.d")}</td>
               <td>{t("schedule.day1.event.d")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.e")}</td>
               <td>{t("schedule.day1.event.e")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.f")}</td>
               <td>{t("schedule.day1.event.f")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day1.time.g")}</td>
               <td>{t("schedule.day1.event.g")}</td>
             </tr>
@@ -117,34 +113,46 @@ const t = getString(Astro.params.lang);
           <h3 class="py-4 text-xl font-bold md:text-2xl">
             {t("schedule.day2")}
           </h3>
-          <table class="h-full w-full table-fixed">
-            <tr class="text-2xl *:py-3">
-              <th>{t("schedule.time")}</th>
-              <th>{t("schedule.event")}</th>
-            </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+          <table class="w-full table-fixed">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day2.time.a")}</td>
               <td>{t("schedule.day2.event.a")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day2.time.b")}</td>
               <td>{t("schedule.day2.event.b")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day2.time.c")}</td>
               <td>{t("schedule.day2.event.c")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day2.time.d")}</td>
               <td>{t("schedule.day2.event.d")}</td>
             </tr>
-            <tr class="text-lg *:px-6 *:py-1">
+            <tr class="text-lg *:py-1">
               <td>{t("schedule.day2.time.e")}</td>
               <td>{t("schedule.day2.event.e")}</td>
             </tr>
           </table>
         </div>
       </div>
+
+      <h2
+        class="border-b-2 border-pink-400 pb-3 pt-8 text-3xl font-bold md:text-4xl"
+      >
+        {t("about.title")}
+      </h2>
+      <p class="text-md p-4 md:text-lg">
+        {t("about.content")}
+      </p>
+
+      <p class="text-md p-4 text-right font-bold text-green-950 md:text-lg">
+        {t("about.learn.title")}
+        <a href="https://hackit.tw" class="text-blue-700 underline"
+          >{t("about.learn.link")}</a
+        >
+      </p>
     </div>
   </div>
 </Layout>
