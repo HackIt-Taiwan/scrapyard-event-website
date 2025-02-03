@@ -43,7 +43,7 @@ export default {
     "flow.content1.sub1": "競賽詳細日程與注意事項。",
     "flow.content1.sub2": "資源準備清單（如需下載軟體、文件等）。",
     "flow.content1.sub3": "若報名後未收到郵件，請盡速聯繫主辦方確認",
-    "flow.content2": "在最終比賽名單公布後，將會有以下兩種狀況",
+    "flow.content2": "在正取與後補名單公布後，將會有以下兩種狀況",
     "flow.content2.selected": "正取",
     "flow.content2.waitlist": "備取",
     "flow.content2.selected.content1":

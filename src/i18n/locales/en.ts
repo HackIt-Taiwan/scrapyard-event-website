@@ -46,7 +46,8 @@ export default {
       "Resource preparation list (e.g., software or documents to download).",
     "flow.content1.sub3":
       "If you do not receive the email after registration, please contact the organizer as soon as possible for confirmation.",
-    "flow.content2": "After the final competition team list has been announced",
+    "flow.content2":
+      "After the announcement of the selected and waitlist lists, there will be two possible result for all teams:",
     "flow.content2.selected": "Selected",
     "flow.content2.waitlist": "Waitlisted",
     "flow.content2.selected.content1":
