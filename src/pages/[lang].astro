@@ -32,15 +32,20 @@ const t = getString(Astro.params.lang);
     id="js:hero"
     style={{ backgroundImage: `url('${cuttingMat.src}')` }}
   >
-    {
-      Astro.params.lang === "us" && (
-        <div class="absolute top-6 z-10 w-full">
-          <div class="mx-auto w-fit rounded-lg bg-orange-400 px-8 py-4 drop-shadow-lg">
-            <p>你是台灣人嗎？點一下右下角的國旗來換語言！</p>
-          </div>
-        </div>
-      )
-    }
+    <div class="absolute top-6 z-10 w-full">
+      <div
+        class="mx-auto w-fit rounded-lg bg-orange-400 px-8 py-4 drop-shadow-lg"
+      >
+        <p>
+          {
+            getString(Astro.params.lang === "us" ? "tw" : "us")(
+              "home.anotherLanguage",
+            )
+          }
+        </p>
+      </div>
+    </div>
+
     <div
       class="flex h-screen w-full flex-col place-items-center justify-center"
     >
