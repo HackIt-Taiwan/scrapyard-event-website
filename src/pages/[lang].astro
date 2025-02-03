@@ -22,8 +22,11 @@ import { twMerge } from "tailwind-merge";
 const t = getString(Astro.params.lang);
 ---
 
-<Layout title="Scrapyard TW 2024" longerTitle="Scrapyard 2024 @ TW">
-  {/* Hero section */}
+<Layout
+  title={t("meta.title")}
+  longerTitle={t("meta.longerTitle")}
+  description={t("meta.description")}
+>
   <div
     class="-z-20 min-h-screen bg-cover bg-top bg-no-repeat drop-shadow-lg transition-all duration-500"
     id="js:hero"
@@ -42,7 +45,7 @@ const t = getString(Astro.params.lang);
       class="flex h-screen w-full flex-col place-items-center justify-center"
     >
       <h1
-        class="px-6 text-center text-3xl font-bold text-white/60 md:text-4xl xl:text-5xl"
+        class="px-6 text-center text-3xl font-bold text-white/60 select-none md:text-4xl xl:text-5xl"
       >
         {t("home.title")}
       </h1>
