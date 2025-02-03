@@ -12,6 +12,14 @@ export default {
     "info.col1.date": "2025/2/11",
     "info.col2.date": "2025/3/1",
     "info.col3.date": "2025/3/15",
+    "about.title": "What is Scrapyard?",
+    "about.content":
+      'Scrapyard is a global hackathon organized by high schoolers. Our flagship (the largest Scrapyard event) will run in Location TBD on March 1st-2nd. Following the flagship, our distributed events will run in 100+ cities worldwide on the weekend of March 15th. Scrapyard is a hackathon with a "scrappy" theme of stupid inventions! It\'s organized by Hack Club, a 501(c)(3) nonprofit that supports a global community of over 50,000 high school makers.',
+    "about.scrapyard.title": "About Scrapyard Taiwan",
+    "about.scrapyard.content1":
+      'Scrapyard Taiwan will be a 24-hour overnight hackathon, staying true to Hack Club’s spirit—"Build stupid s#!t, get stupid prizes." With no fixed theme, participants are encouraged to unleash their creativity and build the most inventive, hilarious, or unconventional tech projects, making it a competition that blends creativity, challenge, and fun for an unforgettable experience.',
+    "about.scrapyard.content2":
+      "Held simultaneously in over 10 countries, Scrapyard Taiwan provides young students with a unique opportunity to collaborate on innovative projects. Beyond enhancing their technical skills, the event fosters teamwork, problem-solving, and leadership abilities, empowering participants to explore, experiment, and grow in a supportive, creative environment.",
     "schedule.title": "Schedule",
     "schedule.day1": "Day 1",
     "schedule.day1.time.a": "8：30 ~ 9：00",
@@ -39,10 +47,10 @@ export default {
     "schedule.day2.event.c": "Lunch",
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
-    "about.title": "About us",
-    "about.content":
+    "about.hackit.title": "About us",
+    "about.hackit.content":
       "We are dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. Through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
-    "about.learn.title": "Wants to know more?",
-    "about.learn.link": "Visit our website!",
+    "about.hackit.learn.title": "Wants to know more?",
+    "about.hackit.learn.link": "Visit our website!",
   },
 } satisfies Locale;

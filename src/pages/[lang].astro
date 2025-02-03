@@ -61,7 +61,6 @@ const t = getString(Astro.params.lang);
 
   <div class="pt-12 pb-8">
     <div class="mx-auto max-w-6xl px-6">
-      {/* Content */}
       <div>
         <div class="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-3">
           <div class="rounded-xl bg-green-400 p-8 drop-shadow-md">
@@ -76,6 +75,26 @@ const t = getString(Astro.params.lang);
           </div>
         </div>
       </div>
+
+      <h2
+        class="border-b-2 border-blue-400 pt-8 pb-3 text-3xl font-bold md:text-4xl"
+      >
+        {t("about.title")}
+      </h2>
+      <p class="text-md py-4 md:text-lg">
+        {t("about.content")}
+      </p>
+
+      <h2
+        class="border-b-2 border-fuchsia-400 pt-8 pb-3 text-3xl font-bold md:text-4xl"
+      >
+        {t("about.scrapyard.title")}
+      </h2>
+      <p class="text-md pt-4 md:text-lg">
+        {t("about.scrapyard.content1")}
+      </p><p class="text-md pb-4 md:text-lg">
+        {t("about.scrapyard.content2")}
+      </p>
 
       <h2
         class="border-b-2 border-green-400 pt-8 pb-3 text-3xl font-bold md:text-4xl"
@@ -150,16 +169,16 @@ const t = getString(Astro.params.lang);
       <h2
         class="border-b-2 border-pink-400 pt-8 pb-3 text-3xl font-bold md:text-4xl"
       >
-        {t("about.title")}
+        {t("about.hackit.title")}
       </h2>
       <p class="text-md p-4 md:text-lg">
-        {t("about.content")}
+        {t("about.hackit.content")}
       </p>
 
       <p class="text-md p-4 text-right font-bold text-green-950 md:text-lg">
-        {t("about.learn.title")}
+        {t("about.hackit.learn.title")}
         <a href="https://hackit.tw" class="text-blue-700 underline"
-          >{t("about.learn.link")}</a
+          >{t("about.hackit.learn.link")}</a
         >
       </p>
     </div>
