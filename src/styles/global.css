@@ -9,3 +9,7 @@
     border-color: var(--color-gray-200, currentColor);
   }
 }
+
+@theme {
+  --font-sans: "Inter Variable", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "LiHei Pro", "黑體-繁", "微軟正黑體", ui-sans-serif, system-ui, sans-serif;
+}

@@ -12,6 +12,7 @@ import { join } from "node:path";
 import { AstroFont } from "astro-font";
 import { Icon } from "astro-icon/components";
 import { ClientRouter } from "astro:transitions";
+import "@fontsource-variable/inter";
 import "../styles/global.css";
 
 const props = Astro.props;
@@ -35,24 +36,6 @@ const props = Astro.props;
           image: props.image ?? "/favicon.png",
         },
       }}
-    />
-    <AstroFont
-      config={[
-        {
-          name: "JasonHandwriting1 Regular",
-          src: [
-            {
-              style: "normal",
-              weight: "400",
-              path: join(process.cwd(), "public", "JasonHandwriting1.ttf"),
-            },
-          ],
-          preload: true,
-          display: "swap",
-          selector: "body",
-          fallback: "sans-serif",
-        },
-      ]}
     />
     <ClientRouter />
   </head>
