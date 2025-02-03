@@ -8,10 +8,10 @@ export default {
     "home.subtitle2": "2025/3/15 - 2025/3/16",
     "info.col1": "表單開放",
     "info.col2": "表單截止",
-    "info.col3": "黑克松開始",
+    "info.col3": "參賽隊伍公布",
     "info.col1.date": "2025/2/11",
     "info.col2.date": "2025/3/1",
-    "info.col3.date": "2025/3/15",
+    "info.col3.date": "2025/3/5",
     "about.title": "Scrapyard 競賽簡介",
     "about.content":
       "Scrapyard 是由 Hack Club 發起、由青少年為青少年自主舉辦的全球性黑客松活動。此活動的最大特色在於其輕鬆有趣的主題，旨在鼓勵青少年舉辦黑客松，充分發揮創意，參與者被鼓勵創造「愚蠢」卻充滿創意的發明，並以此贏得「愚蠢」的獎品。這種形式降的了參與門檻，讓初學者也能毫無壓力地加入，將活動視為一次有趣的體驗而非僅僅是競賽；同時，它也激發了青少年的創造力，讓他們在實踐中學習、探索創新的無限可能，並與志同道合的夥伴建立聯繫。正如其標語所言：'Build stupid s#!t, get stupid prizes'。",

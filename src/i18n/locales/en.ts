@@ -8,10 +8,10 @@ export default {
     "home.subtitle2": "At 2025/3/15 ~ 2025/3/16",
     "info.col1": "Form open",
     "info.col2": "Form close",
-    "info.col3": "Hackathon day 🎉🎉",
+    "info.col3": "Competing Teams Announcement",
     "info.col1.date": "2025/2/11",
     "info.col2.date": "2025/3/1",
-    "info.col3.date": "2025/3/15",
+    "info.col3.date": "2025/3/5",
     "about.title": "What is Scrapyard?",
     "about.content":
       'Scrapyard is a global hackathon organized by high schoolers. Our flagship (the largest Scrapyard event) will run in Location TBD on March 1st-2nd. Following the flagship, our distributed events will run in 100+ cities worldwide on the weekend of March 15th. Scrapyard is a hackathon with a "scrappy" theme of stupid inventions! It\'s organized by Hack Club, a 501(c)(3) nonprofit that supports a global community of over 50,000 high school makers.',
