@@ -46,8 +46,29 @@ export default {
       "Resource preparation list (e.g., software or documents to download).",
     "flow.content1.sub3":
       "If you do not receive the email after registration, please contact the organizer as soon as possible for confirmation.",
-    "flow.content2":
-      "After completing the registration form, participants will receive a confirmation email upon successful registration. The email will include:",
+    "flow.content2": "After the final competition team list has been announced",
+    "flow.content2.selected": "Selected",
+    "flow.content2.waitlist": "Waitlisted",
+    "flow.content2.selected.content1":
+      "Participants will receive an email after the selected list is announced. The email will include the registration website link and a dedicated payment link.",
+    "flow.content2.selected.content2":
+      "Participants must pay the registration fee through the payment link (the payment link is organized by team).",
+    "flow.content2.selected.content3":
+      "After payment is completed, participants can check their registration status on the registration website (the status will show as 'Checked in' within one day of successful payment).",
+    "flow.content2.selected.content4":
+      "Participants can join the Discord community after confirming their selection.",
+    "flow.content2.waitlist.content1":
+      "Participants will receive an email after the selected list is announced. The email will include the registration website link.",
+    "flow.content2.waitlist.content2":
+      "Participants must first visit the registration link to check their waitlist status and choose whether to wait for a spot or withdraw from the waitlist.",
+    "flow.content2.waitlist.content3":
+      "The waitlist will be announced in batches starting from March 8. If successfully selected, participants will receive an email with a dedicated payment link. They must pay the registration fee through this payment link (the payment link is organized by team).",
+    "flow.content2.waitlist.content4":
+      "After payment is completed, participants can check their registration status on the registration website (the status will show as 'Checked in' within one day of successful payment).",
+    "flow.content2.waitlist.content5":
+      "If payment is not made by the deadline, it will be considered as forfeiting the spot, and the spot will be passed to the next batch of waitlisted participants. If not successfully selected by 5:00 PM on March 13, the spot will be considered vacant.",
+    "flow.content2.waitlist.content6":
+      "Participants can join the Discord community after confirming their selection.",
     "prize.title": "Prizes",
     "prize.first": "First place",
     "prize.second": "Second place",
