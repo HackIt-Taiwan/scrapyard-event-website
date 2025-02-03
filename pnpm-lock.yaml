@@ -30,8 +30,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       tailwindcss:
-        specifier: ^4.0.2
-        version: 4.0.2
+        specifier: ^4.0.3
+        version: 4.0.3
     devDependencies:
       '@iconify-json/circle-flags':
         specifier: ^1.2.6
