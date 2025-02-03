@@ -12,7 +12,7 @@ export default {
     "home.subtitle2": "At 2025/3/15 ~ 2025/3/16",
     "info.col1": "Form open",
     "info.col2": "Form close",
-    "info.col3": "Competing Teams Announcement",
+    "info.col3": "Team list Announcement",
     "info.col1.date": "2025/2/11",
     "info.col2.date": "2025/3/1",
     "info.col3.date": "2025/3/5",
@@ -37,6 +37,24 @@ export default {
       "Participants must register as a team, with 4 to 5 members per team.",
     "apply.restrict.content.teacher":
       "Each student and their supervising teacher can only participate in one team and cannot register multiple times.",
+    "flow.title": "Signup flow",
+    "flow.content1":
+      "After completing the registration form, participants will receive a confirmation email upon successful registration. The email will include:",
+    "flow.content1.sub1":
+      "Detailed schedule and important notes for the competition.",
+    "flow.content1.sub2":
+      "Resource preparation list (e.g., software or documents to download).",
+    "flow.content1.sub3":
+      "If you do not receive the email after registration, please contact the organizer as soon as possible for confirmation.",
+    "flow.content2":
+      "After completing the registration form, participants will receive a confirmation email upon successful registration. The email will include:",
+    "prize.title": "Prizes",
+    "prize.first": "First place",
+    "prize.second": "Second place",
+    "prize.third": "Third place",
+    "prize.first.content": "$10000 NTD",
+    "prize.second.content": "$8000 NTD",
+    "prize.third.content": "$6000 NTD",
     "schedule.title": "Schedule",
     "schedule.day1": "Day 1",
     "schedule.day1.time.a": "8：30 ~ 9：00",

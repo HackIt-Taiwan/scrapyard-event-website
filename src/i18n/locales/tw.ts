@@ -37,6 +37,21 @@ export default {
       "參賽者需以團隊形式報名，每隊人數為4至5人。",
     "apply.restrict.content.teacher":
       "每位學生及其指導老師僅能參與一支隊伍，不得重複報名。",
+    "flow.title": "報名流程",
+    "flow.content1":
+      "將報名表資料填寫完畢後，參賽者將於報名成功後收到確認信之郵件，信件內將會包含：",
+    "flow.content1.sub1": "競賽詳細日程與注意事項。",
+    "flow.content1.sub2": "資源準備清單（如需下載軟體、文件等）。",
+    "flow.content1.sub3": "若報名後未收到郵件，請盡速聯繫主辦方確認",
+    "flow.content2":
+      "將報名表資料填寫完畢後，參賽者將於報名成功後收到確認信之郵件，信件內將會包含：",
+    "prize.title": "獎金",
+    "prize.first": "第一名",
+    "prize.second": "第二名",
+    "prize.third": "第三名",
+    "prize.first.content": "$10000 NTD",
+    "prize.second.content": "$8000 NTD",
+    "prize.third.content": "$6000 NTD",
     "schedule.title": "行程表",
     "schedule.day1": "第一天",
     "schedule.day1.time.a": "8：30 ~ 9：00",
