@@ -20,6 +20,19 @@ export default {
       '本次 Scrapyard Taiwan 將採用跨夜（24小時）模式，活動主題將延續 Hack Club 的精神 —— "Build stupid s#!t, get stupid prizes"，不設固定主題，鼓勵創意發揮。Scrapyard Taiwan 將是一場結合創自、挑戰與趣味的賽事，旨在鼓勵創意和實驗精神，挑戰自我，打造最具創新、搞笑或不拘一格的科技項目，給每位參與者難忘的體驗。',
     "about.scrapyard.content2":
       "活動同時在超過 10 個國家舉行，其中包括本次的 Scrapyard Taiwan。台灣站將為台灣的青年學子提供聚集一堂、共同開發創意與創新專案的機會，不僅提升了他們的技術技能，還培養了團隊合作、問題解決與領導等重要能力。",
+    "apply.restrict.title": "報名限制",
+    "apply.restrict.content.student.title":
+      "所有參賽者必須為以下指定身分之一：",
+    "apply.restrict.content.student.content1":
+      "全國各級高中（含職業學校）在學學生。",
+    "apply.restrict.content.student.content2":
+      "全國專科一年級至三年級之在學學生。",
+    "apply.restrict.content.student.content3":
+      "高中教育階段非學校型態實驗教育之學生（需提供相關證明文件）。",
+    "apply.restrict.content.team.title":
+      "參賽者需以團隊形式報名，每隊人數為4至5人。",
+    "apply.restrict.content.teacher":
+      "每位學生及其指導老師僅能參與一支隊伍，不得重複報名。",
     "schedule.title": "行程表",
     "schedule.day1": "第一天",
     "schedule.day1.time.a": "8：30 ~ 9：00",

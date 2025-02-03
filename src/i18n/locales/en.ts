@@ -20,6 +20,19 @@ export default {
       'Scrapyard Taiwan will be a 24-hour overnight hackathon, staying true to Hack Club’s spirit—"Build stupid s#!t, get stupid prizes." With no fixed theme, participants are encouraged to unleash their creativity and build the most inventive, hilarious, or unconventional tech projects, making it a competition that blends creativity, challenge, and fun for an unforgettable experience.',
     "about.scrapyard.content2":
       "Held simultaneously in over 10 countries, Scrapyard Taiwan provides young students with a unique opportunity to collaborate on innovative projects. Beyond enhancing their technical skills, the event fosters teamwork, problem-solving, and leadership abilities, empowering participants to explore, experiment, and grow in a supportive, creative environment.",
+    "apply.restrict.title": "Registration Restrictions",
+    "apply.restrict.content.student.title":
+      "All participants must meet one of the following criteria:",
+    "apply.restrict.content.student.content1":
+      "Students currently enrolled in high schools (including vocational schools) across the country.",
+    "apply.restrict.content.student.content2":
+      "Students currently enrolled in the first to third year of higher vocational colleges across the country.",
+    "apply.restrict.content.student.content3":
+      "Students from non-school-based experimental education in the high school stage (relevant proof documents are required).",
+    "apply.restrict.content.team.title":
+      "Participants must register as a team, with 4 to 5 members per team.",
+    "apply.restrict.content.teacher":
+      "Each student and their supervising teacher can only participate in one team and cannot register multiple times.",
     "schedule.title": "Schedule",
     "schedule.day1": "Day 1",
     "schedule.day1.time.a": "8：30 ~ 9：00",
