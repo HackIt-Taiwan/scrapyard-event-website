@@ -107,6 +107,18 @@ const t = getString(Astro.params.lang);
       </p><p class="text-md pb-4 leading-8 md:text-lg">
         {t("about.scrapyard.content2")}
       </p>
+      {
+        /*
+        簡章擺放位置
+        Astro 內不能使用 HTML 的註解，會被包進 HTML 中
+        <p class="text-md py-4 text-right font-bold text-green-950 md:text-lg">
+          {t("about.hackit.learn.title")}
+          <a href="https://google.com" class="text-blue-700 underline"
+          >{t("about.hackit.learn.link")}
+          </a>
+        </p>
+      */
+      }
 
       <h2
         class="border-b-2 border-fuchsia-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
