@@ -16,8 +16,9 @@ import Layout from "@layouts/Layout.astro";
 
 import cuttingMat from "@assets/cuttingMat.png";
 import banner from "@assets/banner-resized.png";
-import khlogo from "@assets/khlogo.png";
-import taiwanAssistBanner from "@assets/taiwan-assist-banner.png";
+import kaoshiungBanner from "@assets/khlogo.png";
+import microLectureBanner from "@assets/taiwan-assist-banner.png";
+import hackclubBanner from "@assets/hackclub.png";
 
 import { twMerge } from "tailwind-merge";
 
@@ -294,16 +295,27 @@ const t = getString(Astro.params.lang);
       </h2>
 
       <div class="flex flex-col place-items-center py-4">
-        <Image
-          src={khlogo}
-          alt="Education bureau of kaohsiung city government"
-          class="h-32 w-auto"
-        />
-        <Image
-          src={taiwanAssistBanner}
-          alt="Taiwan Micro-Lecture Association"
-          class="h-32 w-auto"
-        />
+        <a href="https://hackclub.com/">
+          <Image
+            src={hackclubBanner}
+            alt="Hackclub banner"
+            class="h-32 w-auto"
+          />
+        </a>
+        <a href="https://www.kh.edu.tw/">
+          <Image
+            src={kaoshiungBanner}
+            alt="Education bureau of kaohsiung city government"
+            class="h-32 w-auto"
+          />
+        </a>
+        <a href="https://www.tmla.at.tw/">
+          <Image
+            src={microLectureBanner}
+            alt="Taiwan Micro-Lecture Association"
+            class="h-32 w-auto"
+          />
+        </a>
       </div>
       <h2
         class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
