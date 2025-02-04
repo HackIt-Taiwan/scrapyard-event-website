@@ -285,16 +285,18 @@ const t = getString(Astro.params.lang);
       </div>
 
       <h2
-      class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
+        class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
       >
         {t("assist.title")}
       </h2>
 
-      <div class="p-2 flex justify-center">
+      <div class="flex flex-col place-items-center py-4">
         <Image src={khlogo} alt="KH Logo" class="h-32 w-auto" />
-      </div>
-      <div class="p-2 flex justify-center">
-        <Image src={taiwanAssistBanner} alt="KH Logo" class="h-32 w-auto" />
+        <Image
+          src={taiwanAssistBanner}
+          alt="Taiwan Micro-Lecture Association"
+          class="h-32 w-auto"
+        />
       </div>
       <h2
         class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
