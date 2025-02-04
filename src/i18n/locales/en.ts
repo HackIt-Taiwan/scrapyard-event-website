@@ -116,12 +116,13 @@ export default {
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
     "assist.title": "Guiding/Co-organizing Unit",
+    "about.hackclub.title": "What Is Hack Club?",
+    "about.hackclub.content":
+      "Hack Club is a global non-profit that empowers high school students to learn programming and explore technology through online courses, community forums, and events. Open to all skill levels, it fosters creativity, problem-solving, and teamwork, helping students discover their passion and potential in the tech field.",
     "about.hackit.title": "About Us",
     "about.hackit.content":
       "We are HackIt, a team dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. We hope through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
     "about.hackit.learn.title": "Wants to know more?",
     "about.hackit.learn.link": "Visit our website!",
-    "about.hackclub.title": "Wants to learn more about Hack Club?",
-    "about.hackclub.link": "Pay a visit to their website!",
   },
 } satisfies Locale;

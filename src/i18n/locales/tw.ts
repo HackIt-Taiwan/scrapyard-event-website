@@ -111,12 +111,13 @@ export default {
     "schedule.day2.event.d": "評審評分",
     "schedule.day2.event.e": "頒獎/閉幕式",
     "assist.title": "指導/協辦單位",
+    "about.hackclub.title": "誰是 Hack Club？",
+    "about.hackclub.content":
+      "Hack Club 是一個全球性的非營利組織，旨在幫助高中生學習程式設計和科技知識。他們提供各種資源，包括線上課程、社群論壇、以及實體活動，讓學生們可以互相交流、學習，並共同參與專案開發。Hack Club 的目標是讓更多年輕人有機會接觸科技，培養他們的創造力、解決問題能力，以及團隊合作精神。無論學生是否有程式設計基礎，Hack Club 都提供適合他們的學習資源和支持，讓他們可以在科技領域中找到自己的興趣和發展方向。",
     "about.hackit.title": "我們是誰？",
     "about.hackit.content":
       "我們是 HackIt，一個致力於培養台灣青少年為青少年籌辦黑客松的能力，並在台灣推廣黑客松風氣的團隊。希望透過舉辦活動，培養台灣學生籌辦活動的實務經驗、獨立思考能力，並提升在地學生的程式設計與創新思維。",
     "about.hackit.learn.title": "想知道更多？",
     "about.hackit.learn.link": "到我們的網站看看吧！",
-    "about.hackclub.title": "想要了解什麼是 Hack Club 嗎",
-    "about.hackclub.link": "去他們的網站看看吧",
   },
 } satisfies Locale;
