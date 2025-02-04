@@ -106,6 +106,7 @@ export default {
     "schedule.day2.event.c": "Lunch",
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
+    "assist.title": "Guiding/Co-organizing Unit",
     "about.hackit.title": "About us",
     "about.hackit.content":
       "We are dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. Through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
@@ -113,6 +114,5 @@ export default {
     "about.hackit.learn.link": "Visit our website!",
     "about.hackclub.title": "Wants to learn more about Hack Club?",
     "about.hackclub.link": "Pay a visit to their website!",
-    "assist.title": "Guiding/Co-organizing Unit",
   },
 } satisfies Locale;
