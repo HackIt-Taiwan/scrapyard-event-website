@@ -14,6 +14,7 @@ export default {
     "info.col1": "表單開放",
     "info.col2": "表單截止",
     "info.col3": "參賽隊伍公布",
+    "news.title": "最新消息",
     "info.col1.date": "2025/2/11",
     "info.col2.date": "2025/3/1",
     "info.col3.date": "2025/3/5",

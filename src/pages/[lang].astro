@@ -1,5 +1,5 @@
 ---
-import { listLocales, getString } from "../i18n";
+import { listLocales, getString, getNews } from "../i18n";
 export function getStaticPaths() {
   return listLocales().map((locale) => {
     return {
@@ -11,6 +11,7 @@ export function getStaticPaths() {
 }
 
 import { Image } from "astro:assets";
+import dayjs from "dayjs";
 
 import Layout from "@layouts/Layout.astro";
 
@@ -22,6 +23,7 @@ import hackclubBanner from "@assets/hackclub.png";
 
 import { twMerge } from "tailwind-merge";
 
+const news = getNews(Astro.params.lang).news;
 const t = getString(Astro.params.lang);
 ---
 
@@ -85,6 +87,33 @@ const t = getString(Astro.params.lang);
             <p class="text-3xl font-bold">{t("info.col3.date")}</p>
             <p class="mt-2 text-xl text-gray-800">{t("info.col3")}</p>
           </div>
+        </div>
+      </div>
+
+      <div class="my-4 rounded-lg bg-gray-300 p-4 drop-shadow-sm">
+        <h2 class="text-3xl font-bold">{t("news.title")}</h2>
+
+        <div class="my-4">
+          {
+            news.map((k, index) => {
+              return (
+                <>
+                  {index !== 0 && (
+                    <hr class="mx-[1%] my-3 h-0.5 border-t-0 bg-gray-400/50 md:mx-0 md:my-4" />
+                  )}
+                  <div>
+                    <div class="mb-2 grid grid-cols-2 items-center">
+                      <p class="text-xl font-semibold">{k.title}</p>
+                      <p class="ml-auto">
+                        {dayjs(k.date).format("YYYY/MM/DD")}
+                      </p>
+                    </div>
+                    <p>{k.content}</p>
+                  </div>
+                </>
+              );
+            })
+          }
         </div>
       </div>
 

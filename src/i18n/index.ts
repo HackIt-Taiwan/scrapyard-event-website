@@ -1,6 +1,9 @@
 const locales = Object.values(
   import.meta.glob<{ default: Locale }>("./locales/*.ts", { eager: true }),
 );
+const news = Object.values(
+  import.meta.glob<{ default: News }>("./news/*.ts", { eager: true }),
+);
 
 export interface Locale {
   locale: string;
@@ -8,6 +11,16 @@ export interface Locale {
   strings: {
     [keys: string]: string;
   };
+}
+
+export interface News {
+  locale: string;
+
+  news: {
+    title: string;
+    date: string;
+    content: string;
+  }[];
 }
 
 export function listLocales(): string[] {
@@ -32,4 +45,13 @@ export function getString(locale: string): (t: string) => string {
       })()
     );
   };
+}
+
+export function getNews(locale: string): News {
+  return (
+    news.find((i) => i.default.locale === locale)?.default ??
+    (() => {
+      throw new Error(`Locale ${locale} not found in news`);
+    })()
+  );
 }

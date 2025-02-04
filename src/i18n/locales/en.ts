@@ -9,6 +9,7 @@ export default {
       '"Build stupid S#!T, get stupid prizes!" Scrapyard hackathon coming soon on 2025/3/15 ~ 2025/3/16 at Taiwan!',
     "home.anotherLanguage":
       "Coming from another country? Switch to English via the button at right bottom corner!",
+    "news.title": "Latest News",
     "home.title": "Build stupid S#!T, get stupid prizes!",
     "home.subtitle1": "Coming soon",
     "home.subtitle2": "At 2025/3/15 ~ 2025/3/16",
