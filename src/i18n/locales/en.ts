@@ -3,10 +3,10 @@ import type { Locale } from "../index";
 export default {
   locale: "us",
   strings: {
-    "meta.title": "Scrapyard TW 2024",
-    "meta.longerTitle": "Scrapyard 2024 @ TW",
+    "meta.title": "Scrapyard TW 2025",
+    "meta.longerTitle": "Scrapyard 2025 @ TW",
     "meta.description":
-      '"Build stupid S#!T, get stupid prizes!" Scrapyard hackathon coming soon on 2024/3/15 ~ 2024/3/16 at Taiwan!',
+      '"Build stupid S#!T, get stupid prizes!" Scrapyard hackathon coming soon on 2025/3/15 ~ 2025/3/16 at Taiwan!',
     "home.anotherLanguage":
       "Coming from another country? Switch to English via the button at right bottom corner!",
     "home.title": "Build stupid S#!T, get stupid prizes!",
