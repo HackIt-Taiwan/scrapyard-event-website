@@ -112,7 +112,7 @@ export default {
     "assist.title": "指導/協辦單位",
     "about.hackit.title": "我們是誰？",
     "about.hackit.content":
-      "我們致力於培養台灣青少年為青少年籌辦黑客松的能力，並在台灣推廣黑客松風氣。透過舉辦活動，培養台灣學生籌辦活動的實務經驗、獨立思考能力，並提升在地學生的程式設計與創新思維。",
+      "我們是 HackIt，一個致力於培養台灣青少年為青少年籌辦黑客松的能力，並在台灣推廣黑客松風氣的團隊。希望透過舉辦活動，培養台灣學生籌辦活動的實務經驗、獨立思考能力，並提升在地學生的程式設計與創新思維。",
     "about.hackit.learn.title": "想知道更多？",
     "about.hackit.learn.link": "到我們的網站看看吧！",
     "about.hackclub.title": "想要了解什麼是 Hack Club 嗎",
