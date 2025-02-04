@@ -39,7 +39,7 @@ export default {
       "Participants must register as a team, with 4 to 5 members per team.",
     "apply.restrict.content.teacher":
       "Each student and their supervising teacher can only participate in one team and cannot register multiple times.",
-    "flow.title": "Signup flow",
+    "flow.title": "Signup Flow",
     "flow.content1":
       "After completing the registration form, participants will receive a confirmation email upon successful registration. The email will include:",
     "flow.content1.sub1":
@@ -110,7 +110,7 @@ export default {
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
     "assist.title": "Guiding/Co-organizing Unit",
-    "about.hackit.title": "About us",
+    "about.hackit.title": "About Us",
     "about.hackit.content":
       "We are dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. Through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
     "about.hackit.learn.title": "Wants to know more?",
