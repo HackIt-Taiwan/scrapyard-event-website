@@ -77,6 +77,11 @@ export default {
     "prize.first.content": "$10000 NTD",
     "prize.second.content": "$8000 NTD",
     "prize.third.content": "$6000 NTD",
+    "prize.with": "+ 獎牌乙面、獎狀乙紙",
+    "prize.special": "人氣獎",
+    "prize.special.limit": "共三名",
+    "prize.special.content":
+      "$2500 NTD、Hack Club stupid prize、Hack Club 獎狀乙紙",
     "schedule.title": "行程表",
     "schedule.day1": "第一天",
     "schedule.day1.time.a": "8：30 ~ 9：00",

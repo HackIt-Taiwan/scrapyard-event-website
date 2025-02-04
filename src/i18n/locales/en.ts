@@ -82,6 +82,11 @@ export default {
     "prize.first.content": "$10000 NTD",
     "prize.second.content": "$8000 NTD",
     "prize.third.content": "$6000 NTD",
+    "prize.with": "+ One medal and one certificate",
+    "prize.special": "Popular Choice Award",
+    "prize.special.limit": "Limited to three winners",
+    "prize.special.content":
+      "$2500 NTD, Hack Club Stupid Prize, and one Hack Club certificate",
     "schedule.title": "Schedule",
     "schedule.day1": "Day 1",
     "schedule.day1.time.a": "8：30 ~ 9：00",
