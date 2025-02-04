@@ -93,7 +93,7 @@ const t = getString(Astro.params.lang);
       <div class="my-4 rounded-lg bg-gray-300 p-4 drop-shadow-sm">
         <h2 class="text-3xl font-bold">{t("news.title")}</h2>
 
-        <div class="my-4">
+        <div class="my-4 [&_a]:text-blue-800 [&_a]:underline">
           {
             news.map((k, index) => {
               return (
@@ -108,7 +108,7 @@ const t = getString(Astro.params.lang);
                         {dayjs(k.date).format("YYYY/MM/DD")}
                       </p>
                     </div>
-                    <p>{k.content}</p>
+                    <p set:html={k.content} />
                   </div>
                 </>
               );
