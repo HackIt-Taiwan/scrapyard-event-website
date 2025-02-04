@@ -113,5 +113,6 @@ export default {
     "about.hackit.learn.link": "Visit our website!",
     "about.hackclub.title": "Wants to learn more about Hack Club?",
     "about.hackclub.link": "Pay a visit to their website!",
+    "assist.title": "Guiding/Co-organizing Unit",
   },
 } satisfies Locale;

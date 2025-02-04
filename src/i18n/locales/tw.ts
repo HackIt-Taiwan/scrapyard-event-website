@@ -108,5 +108,6 @@ export default {
     "about.hackit.learn.link": "到我們的網站看看吧！",
     "about.hackclub.title": "想要了解什麼是 Hack Club 嗎",
     "about.hackclub.link": "去他們的網站看看吧",
+    "assist.title": "指導/協辦單位",
   },
 } satisfies Locale;

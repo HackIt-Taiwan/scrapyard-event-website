@@ -16,6 +16,9 @@ import Layout from "@layouts/Layout.astro";
 
 import cuttingMat from "@assets/cuttingMat.png";
 import banner from "@assets/banner-resized.png";
+import khlogo from "@assets/khlogo.png";
+import taiwanAssistBanner from "@assets/taiwan-assist-banner.png";
+
 import { twMerge } from "tailwind-merge";
 
 const t = getString(Astro.params.lang);
@@ -281,6 +284,18 @@ const t = getString(Astro.params.lang);
         </div>
       </div>
 
+      <h2
+      class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
+      >
+        {t("assist.title")}
+      </h2>
+
+      <div class="p-2 flex justify-center">
+        <Image src={khlogo} alt="KH Logo" class="h-32 w-auto" />
+      </div>
+      <div class="p-2 flex justify-center">
+        <Image src={taiwanAssistBanner} alt="KH Logo" class="h-32 w-auto" />
+      </div>
       <h2
         class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
       >
