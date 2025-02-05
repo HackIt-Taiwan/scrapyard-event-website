@@ -143,12 +143,6 @@ const t = getString(Astro.params.lang);
           >{t("download.brochure")}
           </a>
         </p>
-        <p class="text-md py-4 font-bold text-right text-green-950 md:text-lg">
-          {t("download.toparents.title")}
-          <a href="https://google.com" class="text-blue-700 underline"
-          >{t("download.toparents")}
-          </a>
-        </p>
       }
 
       <h2
@@ -182,7 +176,12 @@ const t = getString(Astro.params.lang);
           <li>{t("apply.restrict.content.teacher")}</li>
         </ol>
       </div>
-
+      <p class="text-md py-4 font-bold text-right text-green-950 md:text-lg">
+        {t("download.toparents.title")}
+        <a href="https://google.com" class="text-blue-700 underline"
+        >{t("download.toparents")}
+        </a>
+      </p>
       <h2
         class="border-b-2 border-gray-600 pt-8 pb-3 text-3xl font-bold md:text-4xl"
       >
