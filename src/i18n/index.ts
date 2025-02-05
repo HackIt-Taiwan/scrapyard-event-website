@@ -5,6 +5,10 @@ const news = Object.values(
   import.meta.glob<{ default: News }>("./news/*.ts", { eager: true }),
 );
 
+const faq = Object.values(
+  import.meta.glob<{ default: Faq }>("./faq/*.ts", { eager: true }),
+);
+
 export interface Locale {
   locale: string;
 
@@ -20,6 +24,15 @@ export interface News {
     title: string;
     date: string;
     content: string;
+  }[];
+}
+
+export interface Faq {
+  locale: string;
+
+  faq: {
+    title: string;
+    answer: string;
   }[];
 }
 
@@ -52,6 +65,15 @@ export function getNews(locale: string): News {
     news.find((i) => i.default.locale === locale)?.default ??
     (() => {
       throw new Error(`Locale ${locale} not found in news`);
+    })()
+  );
+}
+
+export function getFaq(locale: string): Faq {
+  return (
+    faq.find((i) => i.default.locale === locale)?.default ??
+    (() => {
+      throw new Error(`Locale ${locale} not found in Faq`);
     })()
   );
 }

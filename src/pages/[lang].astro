@@ -1,5 +1,5 @@
 ---
-import { listLocales, getString, getNews } from "../i18n";
+import { listLocales, getString, getNews, getFaq } from "../i18n";
 export function getStaticPaths() {
   return listLocales().map((locale) => {
     return {
@@ -24,6 +24,7 @@ import hackclubBanner from "@assets/hackclub.png";
 import { twMerge } from "tailwind-merge";
 
 const news = getNews(Astro.params.lang).news;
+const faq = getFaq(Astro.params.lang).faq;
 const t = getString(Astro.params.lang);
 ---
 
@@ -137,12 +138,14 @@ const t = getString(Astro.params.lang);
         {t("about.scrapyard.content2")}
       </p>
       {
-        <p class="text-md py-4 font-bold text-right text-green-950 md:text-lg">
-          {t("download.brochure.title")}
-          <a href="https://google.com" class="text-blue-700 underline"
-          >{t("download.brochure")}
-          </a>
-        </p>
+        (
+          <p class="text-md py-4 text-right font-bold text-green-950 md:text-lg">
+            {t("download.brochure.title")}
+            <a href="https://google.com" class="text-blue-700 underline">
+              {t("download.brochure")}
+            </a>
+          </p>
+        )
       }
 
       <h2
@@ -176,10 +179,10 @@ const t = getString(Astro.params.lang);
           <li>{t("apply.restrict.content.teacher")}</li>
         </ol>
       </div>
-      <p class="text-md py-4 font-bold text-right text-green-950 md:text-lg">
+      <p class="text-md py-4 text-right font-bold text-green-950 md:text-lg">
         {t("download.toparents.title")}
         <a href="https://google.com" class="text-blue-700 underline"
-        >{t("download.toparents")}
+          >{t("download.toparents")}
         </a>
       </p>
       <h2
@@ -380,6 +383,52 @@ const t = getString(Astro.params.lang);
           />
         </a>
       </div>
+      <h2
+        class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
+      >
+        {"FAQ"}
+      </h2>
+      <div
+        x-data="{ selected: null }"
+        class="space-y-2 pt-4 md:grid md:grid-cols-2 md:gap-4"
+      >
+        {
+          faq.map((k, index) => {
+            return (
+              <>
+                <div>
+                  <button
+                    @click=`selected !== ${index} ? selected = ${index} : selected = null`
+                    class="flex w-full items-center justify-between rounded-lg bg-gray-100 px-4 py-3 text-left focus:ring-2 focus:ring-indigo-600 focus:outline-none"
+                  >
+                    <span class="font-medium text-gray-800">
+                      {k.title}
+                    </span>
+                    <span x-show=`selected === ${index}` class="text-indigo-600">
+                      -
+                    </span>
+                    <span x-show=`selected !== ${index}` class="text-indigo-600">
+                      +
+                    </span>
+                  </button>
+                  <div
+                    x-show=`selected === ${index}`
+                    x-transition:enter="transition-all ease-out duration-300"
+                    x-transition:enter-start="opacity-0 transform scale-95"
+                    x-transition:enter-end="opacity-100 transform scale-100"
+                    x-transition:leave="transition-all ease-in duration-300"
+                    x-transition:leave-start="opacity-100 transform scale-100"
+                    x-transition:leave-end="opacity-0 transform scale-95"
+                    class="mt-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700"
+                  >
+                    {k.answer}
+                  </div>
+                </div>
+              </>
+            );
+          })
+        }
+      </div>
 
       <h2
         class="border-b-2 border-pink-800 pt-8 pb-3 text-3xl font-bold md:text-4xl"
@@ -417,3 +466,5 @@ const t = getString(Astro.params.lang);
     true,
   );
 </script>
+
+<script src="https://unpkg.com/alpinejs@3.1.1/dist/cdn.min.js"></script>

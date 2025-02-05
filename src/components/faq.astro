@@ -1,0 +1,39 @@
+---
+import { useState } from "react";
+
+---
+const Faq = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const faqData = [
+    { question: "What is HackIt?", answer: "HackIt is a student-led hackathon initiative in Taiwan." },
+    { question: "How can I participate?", answer: "You can sign up on our website and join upcoming events." },
+    { question: "Is prior coding experience required?", answer: "No, all skill levels are welcome!" }
+  ];
+
+  const toggleFaq = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  return (
+    <section className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-2xl">
+      <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+      <div className="space-y-4">
+        {faqData.map((faq, index) => (
+          <div key={index} className="border-b border-gray-200 pb-4">
+            <button
+              className="flex justify-between w-full text-left text-lg font-medium"
+              onClick={() => toggleFaq(index)}
+            >
+              {faq.question}
+              <span>{openIndex === index ? "➖" : "➕"}</span>
+            </button>
+            {openIndex === index && <p className="mt-2 text-gray-600">{faq.answer}</p>}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Faq;
