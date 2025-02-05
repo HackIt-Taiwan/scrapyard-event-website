@@ -120,7 +120,7 @@ export default {
     "about.hackit.learn.title": "想知道更多？",
     "about.hackit.learn.link": "到我們的網站看看吧！",
     "about.hackit.discord.link": "Visit our website!",
-    "download.brochure.title": "完整的簡章下載",
+    "download.brochure.title": "想了解更多?",
     "download.brochure": "完整的簡章下載",
     "download.toparents.title": "不知道怎麼說服家長嗎?",
     "download.toparents": "給家長的一封信",

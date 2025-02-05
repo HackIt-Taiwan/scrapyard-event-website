@@ -125,7 +125,9 @@ export default {
     "about.hackit.learn.title": "Wants to know more?",
     "about.hackit.learn.link": "Visit our website!",
     "about.hackit.discord.link": "Visit our website!",
-    "download.brochure": "Brochure download",
-    "download.toParents": "A letter to parents",
+    "download.brochure.title": "Want to Learn More?",
+    "download.brochure": "Download the Full Brochure",
+    "download.toparents.title": "Not Sure How to Convince Your Parents?",
+    "download.toparents": "A Letter to Parents"
   },
 } satisfies Locale;
