@@ -124,5 +124,6 @@ export default {
     "download.brochure": "完整的簡章下載",
     "download.toparents.title": "不知道怎麼說服家長嗎?",
     "download.toparents": "給家長的一封信",
+    "joinus.discord": "加入我們的Discord!"
   },
 } satisfies Locale;
