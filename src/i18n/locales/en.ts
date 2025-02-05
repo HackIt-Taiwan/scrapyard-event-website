@@ -124,5 +124,8 @@ export default {
       "We are HackIt, a team dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. We hope through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
     "about.hackit.learn.title": "Wants to know more?",
     "about.hackit.learn.link": "Visit our website!",
+    "about.hackit.discord.link": "Visit our website!",
+    "download.brochure": "Brochure download",
+    "download.toParents": "A letter to parents",
   },
 } satisfies Locale;
