@@ -10,7 +10,7 @@ export default {
     },
     {
       title: "What about accommodation?",
-      answer: "I don't know either.",
+      answer: "We will arrange accommodation! We will arrange accommodation so that you can have a wonderful sleep~.",
     },
     {
       title: "Is there any transportation subsidy?",
@@ -19,7 +19,7 @@ export default {
     },
     {
       title: "Do low-income participants still need to pay?",
-      answer: "I don't know either.",
+      answer: "We are still negotiating with sponsors! We will notify you as soon as possible if there is any progress!",
     },
     {
       title: "Do we have to be present at the event?",
