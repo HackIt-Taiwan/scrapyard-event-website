@@ -1,7 +1,7 @@
 import type { Faq } from "../index.ts";
 
 export default {
-  locale: "en",
+  locale: "us",
   faq: [
     {
       title: "What about the food?",
