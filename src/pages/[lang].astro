@@ -39,11 +39,11 @@ const t = getString(Astro.params.lang);
     id="js:hero"
     style={{ backgroundImage: `url('${cuttingMat.src}')` }}
   >
-    <div class="absolute top-6 z-10 w-full">
+    <div class="absolute top-6 z-10 w-full px-2">
       <div
-        class="mx-auto w-fit rounded-lg bg-orange-400 px-8 py-4 drop-shadow-lg"
+        class="mx-auto w-fit rounded-lg bg-orange-400 px-4 py-4 drop-shadow-lg md:px-8"
       >
-        <p>
+        <p class="text-center text-sm">
           {
             getString(Astro.params.lang === "us" ? "tw" : "us")(
               "home.anotherLanguage",
