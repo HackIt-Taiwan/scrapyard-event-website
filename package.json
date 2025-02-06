@@ -12,6 +12,7 @@
     "@astrojs/alpinejs": "^0.4.3",
     "@astrojs/sitemap": "^3.2.1",
     "@fontsource-variable/inter": "^5.1.1",
+    "@iconify-json/lucide": "^1.2.25",
     "@iconify-json/simple-icons": "^1.2.23",
     "@tailwindcss/vite": "^4.0.3",
     "@types/node": "^22.13.0",
