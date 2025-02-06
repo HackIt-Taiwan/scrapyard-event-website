@@ -123,5 +123,6 @@ export default {
     "download.brochure": "下載黑客松完整簡章",
     "download.toparents.title": "不知道怎麼說服家長嗎？",
     "download.toparents": "給家長的一封信",
+    "contact.title": "聯絡我們",
   },
 } satisfies Locale;

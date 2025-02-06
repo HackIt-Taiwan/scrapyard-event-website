@@ -128,5 +128,6 @@ export default {
     "download.brochure": "Download the Full Brochure",
     "download.toparents.title": "Not Sure How to Convince Your Parents?",
     "download.toparents": "A Letter to Parents",
+    "contact.title": "Contact us",
   },
 } satisfies Locale;
