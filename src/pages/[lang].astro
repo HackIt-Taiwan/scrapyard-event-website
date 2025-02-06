@@ -12,6 +12,7 @@ export function getStaticPaths() {
 
 import { Image } from "astro:assets";
 import dayjs from "dayjs";
+import { Icon } from "astro-icon/components";
 
 import Layout from "@layouts/Layout.astro";
 
@@ -72,24 +73,35 @@ const t = getString(Astro.params.lang);
       <p class="pt-2 text-center text-lg text-white md:text-xl xl:text-2xl">
         {t("home.subtitle2")}
       </p>
+
+      <div class="mt-6 grid grid-flow-col gap-6">
+        <a
+          href="https://go.hackit.tw/discord"
+          class="text-gray-300 transition-transform hover:scale-120 hover:drop-shadow-2xl"
+        >
+          <p class="sr-only">Join our Discord server</p>
+          <Icon name="simple-icons:discord" class="text-3xl" />
+        </a>
+        <a
+          href="https://www.instagram.com/hackit.tw/"
+          class="text-gray-300 transition-transform hover:scale-120 hover:drop-shadow-2xl"
+        >
+          <p class="sr-only">Visit our Instagram page</p>
+          <Icon name="simple-icons:instagram" class="text-3xl" />
+        </a>
+        <a
+          href="https://www.threads.net/@hackit.tw"
+          class="text-gray-300 transition-transform hover:scale-120 hover:drop-shadow-2xl"
+        >
+          <p class="sr-only">Visit our Threads page</p>
+          <Icon name="simple-icons:threads" class="text-3xl" />
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="px-6 pt-12 pb-8">
+  <div class="pt-12 pb-8">
     <div class="mx-auto max-w-6xl px-6">
-      <a href="https://go.hackit.tw/discord">
-        <div
-          class="flex items-center space-x-5 rounded-xl bg-[#7289DA] p-5 text-lg drop-shadow-md"
-        >
-          <Image
-            src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"
-            alt="A bird."
-            width="50"
-            height="50"
-          />
-          <p>{t("joinus.discord")}</p>
-        </div>
-      </a>
       <div>
         <div class="grid grid-cols-1 gap-6 pt-4 lg:grid-cols-3">
           <div class="rounded-xl bg-green-400 p-8 drop-shadow-md">
