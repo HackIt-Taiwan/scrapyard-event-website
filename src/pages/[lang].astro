@@ -68,18 +68,25 @@ const t = getString(Astro.params.lang);
 
       <p class="pt-16 text-center text-xl text-white md:text-2xl xl:text-3xl">
         {t("home.subtitle1")}
-      </p><p class="pt-2 text-center text-lg text-white md:text-xl xl:text-2xl">
+      </p>
+      <p class="pt-2 text-center text-lg text-white md:text-xl xl:text-2xl">
         {t("home.subtitle2")}
       </p>
     </div>
   </div>
 
-  <div class="pt-12 pb-8 px-6">
-
+  <div class="px-6 pt-12 pb-8">
     <div class="mx-auto max-w-6xl px-6">
       <a href="https://go.hackit.tw/discord">
-        <div class="p-5 text-lg rounded-xl drop-shadow-md bg-[#7289DA] flex space-x-5 items-center">
-          <Image src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg" alt="A bird." width="50" height="50" />
+        <div
+          class="flex items-center space-x-5 rounded-xl bg-[#7289DA] p-5 text-lg drop-shadow-md"
+        >
+          <Image
+            src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"
+            alt="A bird."
+            width="50"
+            height="50"
+          />
           <p>{t("joinus.discord")}</p>
         </div>
       </a>
@@ -88,10 +95,12 @@ const t = getString(Astro.params.lang);
           <div class="rounded-xl bg-green-400 p-8 drop-shadow-md">
             <p class="text-3xl font-bold">{t("info.col1.date")}</p>
             <p class="mt-2 text-xl text-gray-800">{t("info.col1")}</p>
-          </div><div class="rounded-xl bg-blue-400 p-8 drop-shadow-md">
+          </div>
+          <div class="rounded-xl bg-blue-400 p-8 drop-shadow-md">
             <p class="text-3xl font-bold">{t("info.col2.date")}</p>
             <p class="mt-2 text-xl text-gray-800">{t("info.col2")}</p>
-          </div><div class="rounded-xl bg-amber-400 p-8 drop-shadow-md">
+          </div>
+          <div class="rounded-xl bg-amber-400 p-8 drop-shadow-md">
             <p class="text-3xl font-bold">{t("info.col3.date")}</p>
             <p class="mt-2 text-xl text-gray-800">{t("info.col3")}</p>
           </div>
@@ -148,7 +157,11 @@ const t = getString(Astro.params.lang);
         (
           <p class="text-md py-4 text-right font-bold text-green-950 md:text-lg">
             {t("download.brochure.title")}
-            <a href="/2025-brochure.pdf" class="text-blue-700 underline" target="_blank">
+            <a
+              href="/2025-brochure.pdf"
+              class="text-blue-700 underline"
+              target="_blank"
+            >
               {t("download.brochure")}
             </a>
           </p>
@@ -188,7 +201,11 @@ const t = getString(Astro.params.lang);
       </div>
       <p class="text-md py-4 text-right font-bold text-green-950 md:text-lg">
         {t("download.toparents.title")}
-        <a href="https://hackittw.notion.site/scrapyard-toparents" class="text-blue-700 underline" target="_blank">
+        <a
+          href="https://hackittw.notion.site/scrapyard-toparents"
+          class="text-blue-700 underline"
+          target="_blank"
+        >
           {t("download.toparents")}
         </a>
       </p>
@@ -402,36 +419,38 @@ const t = getString(Astro.params.lang);
         {
           faq.map((k, index) => {
             return (
-              <>
-                <div>
-                  <button
-                    @click=`selected !== ${index} ? selected = ${index} : selected = null`
-                    class="flex w-full items-center justify-between rounded-lg bg-gray-100 px-4 py-3 text-left focus:ring-2 focus:ring-indigo-600 focus:outline-none"
+              <div class="transition-all duration-500">
+                <button
+                  @click={`selected !== ${index} ? selected = ${index} : selected = null`}
+                  class="flex w-full items-center justify-between rounded-lg bg-gray-100 px-4 py-3 text-left focus:ring-2 focus:ring-indigo-600 focus:outline-none"
+                >
+                  <span class="font-medium text-gray-800">{k.title}</span>
+                  <span
+                    x-show={`selected === ${index}`}
+                    class="text-indigo-600"
                   >
-                    <span class="font-medium text-gray-800">
-                      {k.title}
-                    </span>
-                    <span x-show=`selected === ${index}` class="text-indigo-600">
-                      -
-                    </span>
-                    <span x-show=`selected !== ${index}` class="text-indigo-600">
-                      +
-                    </span>
-                  </button>
-                  <div
-                    x-show=`selected === ${index}`
-                    x-transition:enter="transition-all ease-out duration-300"
-                    x-transition:enter-start="opacity-0 transform scale-95"
-                    x-transition:enter-end="opacity-100 transform scale-100"
-                    x-transition:leave="transition-all ease-in duration-300"
-                    x-transition:leave-start="opacity-100 transform scale-100"
-                    x-transition:leave-end="opacity-0 transform scale-95"
-                    class="mt-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700"
+                    -
+                  </span>
+                  <span
+                    x-show={`selected !== ${index}`}
+                    class="text-indigo-600"
                   >
-                    {k.answer}
-                  </div>
+                    +
+                  </span>
+                </button>
+                <div
+                  x-show={`selected === ${index}`}
+                  x-transition:enter="transition-all ease-out duration-300"
+                  x-transition:enter-start="opacity-0 transform scale-95"
+                  x-transition:enter-end="opacity-100 transform scale-100"
+                  x-transition:leave="transition-all ease-in duration-300"
+                  x-transition:leave-start="opacity-100 transform scale-100"
+                  x-transition:leave-end="opacity-0 transform scale-95"
+                  class="mt-2 rounded-lg bg-gray-50 px-4 py-3 text-gray-700"
+                >
+                  {k.answer}
                 </div>
-              </>
+              </div>
             );
           })
         }
@@ -473,5 +492,3 @@ const t = getString(Astro.params.lang);
     true,
   );
 </script>
-
-<script src="https://unpkg.com/alpinejs@3.1.1/dist/cdn.min.js"></script>

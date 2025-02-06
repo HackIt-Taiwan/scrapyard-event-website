@@ -6,8 +6,10 @@ import icon from "astro-icon";
 
 import sitemap from "@astrojs/sitemap";
 
+import alpinejs from "@astrojs/alpinejs";
+
 export default defineConfig({
   site: "https://scrapyard.hackit.tw/",
-  integrations: [icon(), sitemap()],
+  integrations: [icon(), sitemap(), alpinejs()],
   vite: { plugins: [tailwindcss()] },
 });
