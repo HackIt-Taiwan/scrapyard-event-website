@@ -119,10 +119,9 @@ export default {
       "我們是 HackIt，一個致力於培養台灣青少年為青少年籌辦黑客松的能力，並在台灣推廣黑客松風氣的團隊。希望透過舉辦活動，培養台灣學生籌辦活動的實務經驗、獨立思考能力，並提升在地學生的程式設計與創新思維。",
     "about.hackit.learn.title": "想知道更多？",
     "about.hackit.learn.link": "到我們的網站看看吧！",
-    "about.hackit.discord.link": "Visit our website!",
     "download.brochure.title": "想了解更多?",
-    "download.brochure": "完整的簡章下載",
-    "download.toparents.title": "不知道怎麼說服家長嗎?",
+    "download.brochure": "下載黑客松完整簡章",
+    "download.toparents.title": "不知道怎麼說服家長嗎？",
     "download.toparents": "給家長的一封信",
   },
 } satisfies Locale;
