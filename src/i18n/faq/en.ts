@@ -66,7 +66,7 @@ export default {
     {
       title: "Is having a mentor mandatory?",
       answer:
-        "Yes, for participants' safety, having a mentor is required, even though staff will also be present on-site.",
+        "Mentor is not required, but to ensure attendances' safety, we recommended mentor also participate this event.",
     },
     {
       title: "Can parents attend?",
@@ -76,7 +76,7 @@ export default {
     {
       title: "Can mentors attend?",
       answer:
-        "Yes, mentors are required to stay throughout the event for participants’ safety. Rest areas will be provided for mentors on-site.",
+        "Yes, mentors can optionally participate the event. Rest areas will be provided for mentors on-site.",
     },
     {
       title: "Will there be adult supervision on-site?",
