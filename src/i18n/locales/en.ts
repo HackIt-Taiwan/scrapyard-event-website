@@ -113,7 +113,7 @@ export default {
       "Hack Club is a global non-profit that empowers high school students to learn programming and explore technology through online courses, community forums, and events. Open to all skill levels, it fosters creativity, problem-solving, and teamwork, helping students discover their passion and potential in the tech field.",
     "about.hackit.title": "About Us",
     "about.hackit.content":
-      "We are HackIt, a team dedicated to empowering Taiwanese youth to organize hackathons for other teenagers and promoting the hackathon culture in Taiwan. We hope through hosting events, we aim to help Taiwanese students gain practical experience in event organization, develop independent thinking skills, and enhance local students' programming and innovative mindsets.",
+      "We empower Taiwanese youth to organize hackathons and promote a hackathon culture. By hosting events, we help students gain practical experience, foster innovation, and enhance collaboration skills. As a student-led organization, we emphasize self-learning, teamwork, and continuous growth, cultivating future tech leaders to push boundaries and contribute to society.",
     "about.hackit.learn.title": "Wants to know more?",
     "about.hackit.learn.link": "Visit our website!",
     "download.brochure.title": "Want to Learn More?",
