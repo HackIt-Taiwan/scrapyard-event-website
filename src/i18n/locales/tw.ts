@@ -9,6 +9,8 @@ export default {
       "「Build stupid S#!T, get stupid prizes!」Scrapyard 黑客松即將於 2025/3/15 ~ 2025/3/16 在台灣登場！",
     "home.title": "Build stupid S#!T, get stupid prizes!",
     "home.anotherLanguage": "你是台灣人嗎？點一下右下角的國旗來換語言！",
+    "home.links.signup": "緩緩，還沒開始報名",
+    "home.links.discord": "加入我們的 Discord 伺服器",
     "home.subtitle1": "即將於台灣登場！",
     "home.subtitle2": "2025/3/15 ~ 2025/3/16",
     "info.col1": "表單開放",

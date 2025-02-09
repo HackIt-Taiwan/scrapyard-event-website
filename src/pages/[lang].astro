@@ -57,7 +57,7 @@ const t = getString(Astro.params.lang);
       class="flex h-screen w-full flex-col place-items-center justify-center"
     >
       <h1
-        class="px-6 text-center text-3xl font-bold text-white/60 select-none md:text-4xl xl:text-5xl"
+        class="text-center text-xl font-bold text-white/60 select-none xl:text-2xl"
       >
         {t("home.title")}
       </h1>
@@ -67,21 +67,37 @@ const t = getString(Astro.params.lang);
         class="h-44 w-auto p-6 drop-shadow-2xl sm:h-56 md:h-fit"
       />
 
-      <p class="pt-16 text-center text-xl text-white md:text-2xl xl:text-3xl">
+      <p
+        class="mt-8 text-center text-xl text-white md:pt-16 md:text-2xl xl:text-4xl"
+      >
         {t("home.subtitle1")}
       </p>
-      <p class="pt-2 text-center text-lg text-white md:text-xl xl:text-2xl">
+      <p class="pt-2 text-center text-lg text-gray-100 md:text-xl xl:text-2xl">
         {t("home.subtitle2")}
       </p>
 
-      <div class="mt-6 grid grid-flow-col gap-6">
-        <a
-          href="https://go.hackit.tw/discord"
-          class="text-gray-300 transition-transform hover:scale-120 hover:drop-shadow-2xl"
+      <div class="mt-8 grid place-items-center gap-y-4">
+        {
+          /* If changed div to button, links won't have pointer cursor unless add cursor-pointer to it */
+        }
+        <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">-->
+        <div
+          class="inline-flex cursor-not-allowed items-center justify-center gap-2 rounded-md border-2 border-dashed border-white/50 bg-black/20 p-3 text-sm text-white select-none md:text-xl"
         >
-          <p class="sr-only">Join our Discord server</p>
-          <Icon name="simple-icons:discord" class="text-3xl" />
+          {t("home.links.signup")}
+        </div>
+        <!--</a>-->
+        <a href="https://go.hackit.tw/discord">
+          <div
+            class="inline-flex items-center justify-center gap-2 rounded-md bg-indigo-600 p-3 text-sm text-white drop-shadow-lg hover:drop-shadow-xl md:text-xl md:transition-all md:hover:scale-105"
+          >
+            <Icon name="simple-icons:discord" class="text-lg md:text-2xl" />
+            {t("home.links.discord")}
+          </div>
         </a>
+      </div>
+
+      <div class="mt-6 grid grid-flow-col gap-6">
         <a
           href="https://www.instagram.com/hackit.tw/"
           class="text-gray-300 transition-transform hover:scale-120 hover:drop-shadow-2xl"
