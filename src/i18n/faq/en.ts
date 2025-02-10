@@ -19,11 +19,6 @@ export default {
         "Hack Club might provide subsidies! However, detailed information will be announced by Hack Club later. Updates will be posted on the official website.",
     },
     {
-      title: "Do low-income participants still have to pay?",
-      answer:
-        "We’re still negotiating with sponsors! Any updates will be shared on the official website as soon as possible.",
-    },
-    {
       title: "Is it mandatory to attend in person?",
       answer:
         "Yes! This event requires participants to be on-site to collaborate with their teammates and create unique projects.",
