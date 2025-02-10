@@ -51,23 +51,21 @@ export default {
     "flow.content2.selected": "正取",
     "flow.content2.waitlist": "備取",
     "flow.content2.selected.content1":
-      "參賽者將於入選名單公告後收到 email，信件內將會包含報到網站連結及專屬付款連結。",
+      "參賽者將於入選名單公告後收到 email，信件內將會包含報到網站連結。",
     "flow.content2.selected.content2":
-      "參賽者需至付款連結繳交報名費（繳費連結以隊伍為單位）。",
+      "參賽者需至報到網站確認報名狀況（一天內報名狀況將會顯示為已報到）。",
     "flow.content2.selected.content3":
-      "繳費完成後可至報到網站確認報名狀況（繳費成功一天內，報名狀況將會顯示為已報到）。",
-    "flow.content2.selected.content4":
       "參賽者可於確定入選後加入 Discord 社群。",
     "flow.content2.waitlist.content1":
       "參賽者將於入選名單公告後收到 email，信件內將會包含報名網站連結。",
     "flow.content2.waitlist.content2":
       "參賽者需先至報到連結確認遞補狀況，選擇等待遞補或放棄遞補。",
     "flow.content2.waitlist.content3":
-      "將於3月8日開始依批次公告遞補名單，若遞補成功將會收到 email，信件內將會包含專屬付款連結，需先至付款連結繳交報名費（繳費連結以隊伍為單位）。",
+      "將於3月8日開始依批次公告遞補名單，若遞補成功將會收到 email 通知。",
     "flow.content2.waitlist.content4":
-      "繳費完成可至報名網站確認報名狀況（繳費成功一天內，報名狀況將會顯示為已報到）。",
+      "參賽者可於確定入選後至報到網站確認報名狀況（一天內報名狀況將會顯示為已報到）。",
     "flow.content2.waitlist.content5":
-      "若逾期未繳費即視為放棄，名額將會流入下一批遞補；若直至 3 月 13 日下午 5：00 還未遞補成功即視為空缺。",
+      "若直至 3 月 13 日下午 5：00 還未遞補成功即視為空缺。",
     "flow.content2.waitlist.content6":
       "參賽者可於確定入選後加入 Discord 社群。",
     "prize.title": "獎金",

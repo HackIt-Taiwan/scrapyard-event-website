@@ -26,7 +26,7 @@ export default {
       'Scrapyard is a global hackathon organized by high schoolers. Our flagship (the largest Scrapyard event) will run in Location TBD on March 1st-2nd. Following the flagship, our distributed events will run in 100+ cities worldwide on the weekend of March 15th. Scrapyard is a hackathon with a "scrappy" theme of stupid inventions! It\'s organized by Hack Club, a 501(c)(3) nonprofit that supports a global community of over 50,000 high school makers.',
     "about.scrapyard.title": "About Scrapyard Taiwan",
     "about.scrapyard.content1":
-      'Scrapyard Taiwan will be a 24-hour overnight hackathon, staying true to Hack Club’s spirit—"Build stupid s#!t, get stupid prizes." With no fixed theme, participants are encouraged to unleash their creativity and build the most inventive, hilarious, or unconventional tech projects, making it a competition that blends creativity, challenge, and fun for an unforgettable experience.',
+      'Scrapyard Taiwan will be a 24-hour overnight hackathon, staying true to Hack Club\'s spirit—"Build stupid s#!t, get stupid prizes." With no fixed theme, participants are encouraged to unleash their creativity and build the most inventive, hilarious, or unconventional tech projects, making it a competition that blends creativity, challenge, and fun for an unforgettable experience.',
     "about.scrapyard.content2":
       "Held simultaneously in over 10 countries, Scrapyard Taiwan provides young students with a unique opportunity to collaborate on innovative projects. Beyond enhancing their technical skills, the event fosters teamwork, problem-solving, and leadership abilities, empowering participants to explore, experiment, and grow in a supportive, creative environment.",
     "apply.restrict.title": "Registration Restrictions",
@@ -56,23 +56,21 @@ export default {
     "flow.content2.selected": "Selected",
     "flow.content2.waitlist": "Waitlisted",
     "flow.content2.selected.content1":
-      "Participants will receive an email after the selected list is announced. The email will include the registration website link and a dedicated payment link.",
+      "Participants will receive an email after the selected list is announced. The email will include the registration website link.",
     "flow.content2.selected.content2":
-      "Participants must pay the registration fee through the payment link (the payment link is organized by team).",
+      "Participants must check their registration status on the registration website (the status will show as 'Checked in' within one day).",
     "flow.content2.selected.content3":
-      "After payment is completed, participants can check their registration status on the registration website (the status will show as 'Checked in' within one day of successful payment).",
-    "flow.content2.selected.content4":
       "Participants can join the Discord community after confirming their selection.",
     "flow.content2.waitlist.content1":
       "Participants will receive an email after the selected list is announced. The email will include the registration website link.",
     "flow.content2.waitlist.content2":
       "Participants must first visit the registration link to check their waitlist status and choose whether to wait for a spot or withdraw from the waitlist.",
     "flow.content2.waitlist.content3":
-      "The waitlist will be announced in batches starting from March 8. If successfully selected, participants will receive an email with a dedicated payment link. They must pay the registration fee through this payment link (the payment link is organized by team).",
+      "The waitlist will be announced in batches starting from March 8. If successfully selected, participants will receive an email notification.",
     "flow.content2.waitlist.content4":
-      "After payment is completed, participants can check their registration status on the registration website (the status will show as 'Checked in' within one day of successful payment).",
+      "After selection, participants can check their registration status on the registration website (the status will show as 'Checked in' within one day).",
     "flow.content2.waitlist.content5":
-      "If payment is not made by the deadline, it will be considered as forfeiting the spot, and the spot will be passed to the next batch of waitlisted participants. If not successfully selected by 5:00 PM on March 13, the spot will be considered vacant.",
+      "If not successfully selected by 5:00 PM on March 13, the spot will be considered vacant.",
     "flow.content2.waitlist.content6":
       "Participants can join the Discord community after confirming their selection.",
     "prize.title": "Prizes",
