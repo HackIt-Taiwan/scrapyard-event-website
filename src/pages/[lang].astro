@@ -78,20 +78,20 @@ const t = getString(Astro.params.lang);
         {t("home.subtitle2")}
       </p>
 
-      <div class="mt-8 grid place-items-center gap-y-4">
+      <div class="mt-8 grid place-items-center gap-y-5">
         {
           /* If changed div to button, links won't have pointer cursor unless add cursor-pointer to it */
         }
-        <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">-->
-        <div
-          class="inline-flex cursor-not-allowed items-center justify-center gap-2 rounded-md border-2 border-dashed border-white/50 bg-black/20 p-3 text-sm text-white select-none md:text-xl"
-        >
-          {t("home.links.signup")}
-        </div>
-        <!--</a>-->
-        <a href="https://go.hackit.tw/discord">
+        <a href="https://join-scrapyard.hackit.tw/" target="_blank">
           <div
-            class="inline-flex items-center justify-center gap-2 rounded-md bg-indigo-600 p-3 text-sm text-white drop-shadow-lg hover:drop-shadow-xl md:text-xl md:transition-all md:hover:scale-105"
+            class="inline-flex items-center justify-center gap-2 rounded-md bg-teal-500 px-6 py-3 text-sm text-white drop-shadow-lg hover:drop-shadow-xl md:text-xl md:transition-all md:hover:scale-105"
+          >
+            {t("home.links.signup")}
+          </div>
+        </a>
+        <a href="https://go.hackit.tw/discord" target="_blank">
+          <div
+            class="md:text-md inline-flex items-center justify-center gap-2 rounded-md bg-indigo-600 p-3 text-sm text-white drop-shadow-lg hover:drop-shadow-xl md:transition-all md:hover:scale-105"
           >
             <Icon name="simple-icons:discord" class="text-lg md:text-2xl" />
             {t("home.links.discord")}

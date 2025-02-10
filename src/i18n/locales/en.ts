@@ -9,7 +9,7 @@ export default {
       '"Build stupid S#!T, get stupid prizes!" Scrapyard hackathon coming soon on 2025/3/15 ~ 2025/3/16 at Taiwan!',
     "home.anotherLanguage":
       "Coming from another country? Switch to English via the button at right bottom corner!",
-    "home.links.signup": "Signup not opened yet",
+    "home.links.signup": "Signup for event now",
     "home.links.discord": "Join our Discord server",
     "news.title": "Latest News",
     "home.title": "Build stupid S#!T, get stupid prizes!",
