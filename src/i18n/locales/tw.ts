@@ -101,6 +101,7 @@ export default {
     "schedule.day2.event.c": "午餐",
     "schedule.day2.event.d": "評審評分",
     "schedule.day2.event.e": "頒獎/閉幕式",
+    "host.title": "主辦/共同主辦單位",
     "assist.title": "指導/協辦單位",
     "about.hackclub.title": "誰是 Hack Club？",
     "about.hackclub.content":

@@ -107,6 +107,7 @@ export default {
     "schedule.day2.event.c": "Lunch",
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
+    "host.title": "Organizing/Co-organizing Unit",
     "assist.title": "Guiding/Co-organizing Unit",
     "about.hackclub.title": "What Is Hack Club?",
     "about.hackclub.content":
