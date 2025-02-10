@@ -48,8 +48,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       tailwindcss:
-        specifier: ^4.0.4
-        version: 4.0.4
+        specifier: ^4.0.6
+        version: 4.0.6
     devDependencies:
       '@iconify-json/circle-flags':
         specifier: ^1.2.6
@@ -1972,9 +1972,6 @@ packages:
 
   tailwind-merge@3.0.1:
     resolution: {integrity: sha512-AvzE8FmSoXC7nC+oU5GlQJbip2UO7tmOhOfQyOmPhrStOGXHU08j8mZEHZ4BmCqY5dWTCo4ClWkNyRNx1wpT0g==}
-
-  tailwindcss@4.0.4:
-    resolution: {integrity: sha512-/ezDLEkOLf1lXkr9F2iI5BHJbexJpty5zkV2B8bGHCqAdbc9vk85Jgdkq+ZOvNkNPa3yAaqJ8DjRt584Bc84kw==}
 
   tailwindcss@4.0.6:
     resolution: {integrity: sha512-mysewHYJKaXgNOW6pp5xon/emCsfAMnO8WMaGKZZ35fomnR/T5gYnRg2/yRTTrtXiEl1tiVkeRt0eMO6HxEZqw==}
@@ -4583,8 +4580,6 @@ snapshots:
       picocolors: 1.1.1
 
   tailwind-merge@3.0.1: {}
-
-  tailwindcss@4.0.4: {}
 
   tailwindcss@4.0.6: {}
 
