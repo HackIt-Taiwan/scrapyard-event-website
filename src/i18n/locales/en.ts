@@ -107,8 +107,9 @@ export default {
     "schedule.day2.event.c": "Lunch",
     "schedule.day2.event.d": "Judging",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
-    "host.title": "Organizing/Co-organizing Unit",
-    "assist.title": "Guiding/Co-organizing Unit",
+    "host.title": "Organizing Unit",
+    "guide.title": "Guiding Unit",
+    "assist.title": "Assisting Unit",
     "about.hackclub.title": "What Is Hack Club?",
     "about.hackclub.content":
       "Hack Club is a global non-profit that empowers high school students to learn programming and explore technology through online courses, community forums, and events. Open to all skill levels, it fosters creativity, problem-solving, and teamwork, helping students discover their passion and potential in the tech field.",

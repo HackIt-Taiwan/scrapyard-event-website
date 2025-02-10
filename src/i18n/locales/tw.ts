@@ -101,8 +101,9 @@ export default {
     "schedule.day2.event.c": "午餐",
     "schedule.day2.event.d": "評審評分",
     "schedule.day2.event.e": "頒獎/閉幕式",
-    "host.title": "主辦/共同主辦單位",
-    "assist.title": "指導/協辦單位",
+    "host.title": "主辦單位",
+    "guide.title": "指導單位",
+    "assist.title": "協辦單位",
     "about.hackclub.title": "誰是 Hack Club？",
     "about.hackclub.content":
       "Hack Club 是一個全球性的非營利組織，旨在幫助高中生學習程式設計和科技知識。他們提供各種資源，包括線上課程、社群論壇、以及實體活動，讓學生們可以互相交流、學習，並共同參與專案開發。Hack Club 的目標是讓更多年輕人有機會接觸科技，培養他們的創造力、解決問題能力，以及團隊合作精神。無論學生是否有程式設計基礎，Hack Club 都提供適合他們的學習資源和支持，讓他們可以在科技領域中找到自己的興趣和發展方向。",

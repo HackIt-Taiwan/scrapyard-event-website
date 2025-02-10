@@ -441,6 +441,22 @@ const t = getString(Astro.params.lang);
       <h2
         class="border-b-2 border-green-500 pt-8 pb-3 text-3xl font-bold md:text-4xl"
       >
+        {t("guide.title")}
+      </h2>
+
+      <div class="flex flex-col place-items-center py-4">
+        <a href="https://www.ntpc.edu.tw/" target="_blank">
+          <Image
+            src={taipeiBanner}
+            alt="Department of Education, Taipei City Government"
+            class="h-32 w-auto"
+          />
+        </a>
+      </div>
+
+      <h2
+        class="border-b-2 border-green-500 pt-8 pb-3 text-3xl font-bold md:text-4xl"
+      >
         {t("host.title")}
       </h2>
 
@@ -464,13 +480,6 @@ const t = getString(Astro.params.lang);
       </h2>
 
       <div class="flex flex-col place-items-center py-4">
-        <a href="https://www.ntpc.edu.tw/" target="_blank">
-          <Image
-            src={taipeiBanner}
-            alt="Department of Education, Taipei City Government"
-            class="h-32 w-auto"
-          />
-        </a>
         <a href="https://www.tmla.at.tw/" target="_blank">
           <Image
             src={microLectureBanner}
@@ -514,22 +523,22 @@ const t = getString(Astro.params.lang);
       </p>
     </div>
   </div>
-</Layout>
 
-<script>
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (window.scrollY > 0) {
-        document
-          .getElementById("js:hero")
-          ?.classList.add("md:rounded-b-3xl", "md:mx-5");
-      } else {
-        document
-          .getElementById("js:hero")
-          ?.classList.remove("md:rounded-b-3xl", "md:mx-5");
-      }
-    },
-    true,
-  );
-</script>
+  <script>
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (window.scrollY > 0) {
+          document
+            .getElementById("js:hero")
+            ?.classList.add("md:rounded-b-3xl", "md:mx-5");
+        } else {
+          document
+            .getElementById("js:hero")
+            ?.classList.remove("md:rounded-b-3xl", "md:mx-5");
+        }
+      },
+      true,
+    );
+  </script>
+</Layout>
