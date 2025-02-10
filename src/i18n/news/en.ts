@@ -4,9 +4,10 @@ export default {
   locale: "us",
   news: [
     {
-      title: "No news for now",
-      date: "2025-02-04",
-      content: "Stay tuned for 'latest' latest news!",
+      title: "Scrapyard 2025 is open for registration now!",
+      date: "2025-02-10",
+      content:
+        "Scrapyard hackathon is open for registration now! Head over to our Discord server or send an email to our official mailbox if you have any question!",
     },
   ],
 } satisfies News;
