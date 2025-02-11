@@ -4,79 +4,89 @@ export default {
   locale: "us",
   faq: [
     {
-      title: "What about food?",
+      title: "How’s the food?",
       answer:
-        "We will provide plenty of meals, including three meals, snacks, drinks, and bread. A food bar will also be available for participants to grab what they need to stay energized!",
+        "We will provide ample meals, including three main meals, snacks, drinks, and bread. A food station will also be set up for participants to grab refreshments whenever needed to keep their energy up!",
     },
     {
       title: "What about accommodation?",
       answer:
-        "We’ve got you covered! Accommodation will be arranged so you can get a good night’s rest.",
+        "We’ve got you covered! We will arrange accommodations so you can get a good night’s sleep.",
     },
     {
-      title: "Is there a transportation subsidy?",
+      title: "Is there a travel subsidy?",
       answer:
-        "Hack Club might provide subsidies! However, detailed information will be announced by Hack Club later. Updates will be posted on the official website.",
+        "Hack Club may provide subsidies! However, we’ll have to wait for Hack Club to release more details. Any updates will be posted on our website in real time.",
     },
     {
-      title: "Is it mandatory to attend in person?",
+      title: "Do I have to attend in person?",
       answer:
-        "Yes! This event requires participants to be on-site to collaborate with their teammates and create unique projects.",
+        "Yes! Participants will collaborate on-site to create their own unique projects, so attending in person is required.",
     },
     {
       title: "When does registration start?",
       answer:
-        "The registration system will open on February 11. Stay tuned for the latest updates on our official website.",
+        "The registration system will open on February 11! Stay tuned for the latest updates on our website.",
     },
     {
-      title: "How will I know if we’re selected?",
+      title: "How will I know if I got selected?",
       answer:
-        "The selected participants list will be announced on March 5 on the official website. Please keep an eye on the latest updates!",
+        "The list of selected participants will be announced on March 5 on our website. Be sure to check for updates!",
     },
     {
       title: "Can we trust you?",
       answer:
-        "Although we’re just high school students, we all have relevant experience and backgrounds. Plus, we collaborate with government organizations and Hack Club in the U.S., making us as trustworthy as Tylenol!",
+        "Although we are just high school students, each of us has a strong background and experience in this field. We also collaborate with government agencies and Hack Club in the U.S., so you can trust us—just like you trust Panadol!",
     },
     {
-      title: "Can I attend for just half a day?",
+      title: "Can I attend for only half a day?",
       answer:
-        "This is an overnight event that spans two days, so participants must stay for the entire duration.",
+        "This event is an overnight hackathon, and the schedule spans two full days. Participants must be present for both days.",
     },
     {
-      title: "What’s the hackathon topic?",
+      title: "What is the theme of the competition?",
       answer:
-        "There are no restrictions on topics! This event is all about encouraging creativity, experimentation, and building unique, funny, or innovative projects.",
+        "To encourage creativity, experimentation, and pushing limits, this hackathon has no specific theme. You are free to create the most innovative, hilarious, or out-of-the-box projects!",
     },
     {
       title: "Who can participate?",
       answer:
-        "Any high school student interested in programming is welcome to join, regardless of experience!",
+        "Any high school student with an interest in programming is welcome, regardless of experience!",
     },
     {
-      title: "How many people can join as a team?",
+      title: "How many people can be on a team?",
       answer:
-        "Teams should consist of 4 to 5 members. If you don’t have a team, join our official Discord community to find teammates!",
+        "Teams should have 4 to 5 members. If you’re interested but don’t have a team yet, join our official Discord community to find teammates!",
     },
     {
-      title: "Is having a mentor mandatory?",
+      title: "Is a mentor required?",
       answer:
-        "Mentor is not required, but to ensure attendances' safety, we recommended mentor also participate this event.",
+        "A mentor is not required! However, we recommend having a mentor present.",
     },
     {
-      title: "Can parents attend?",
+      title: "Do mentors have to be present?",
       answer:
-        "Due to space limitations, we haven’t arranged a dedicated resting area for parents. However, if parents have concerns, they are welcome to contact us via email.",
+        "There will be staff members on-site throughout the event, so mentors are not required to stay. However, for the safety of participants, we still recommend that mentors accompany them.",
     },
     {
-      title: "Can mentors attend?",
+      title: "Can parents come?",
       answer:
-        "Yes, mentors can optionally participate the event. Rest areas will be provided for mentors on-site.",
+        "Due to venue constraints, we are unable to provide a dedicated resting area for parents. We apologize for the inconvenience. If parents have any concerns, feel free to contact us.",
+    },
+    {
+      title: "Can mentors come?",
+      answer: "Yes! We will have a designated rest area for mentors on-site.",
     },
     {
       title: "Will there be adult supervision on-site?",
       answer:
-        "Although the HackIt team consists of high school students, we also have adult team members, and mentors will be present throughout the event. No need to worry!",
+        "Although the HackIt team consists mostly of high school students, we also have adult team members. Additionally, staff and mentors will be present throughout the event, so there’s no need to worry!",
+    },
+    {
+      title:
+        "How do we participate in the global competition? What are the details?",
+      answer:
+        "The details of the global competition will be announced by Hack Club, so stay tuned!",
     },
   ],
 } satisfies Faq;
