@@ -41,6 +41,7 @@ export default {
       "參賽者需以團隊形式報名，每隊人數為4至5人。",
     "apply.restrict.content.teacher":
       "每位學生及其指導老師僅能參與一支隊伍，不得重複報名。",
+    "apply.restrict.content.limit": "本次活動限制20組隊伍參加，採優先報名制度，請盡快報名！",
     "flow.title": "報名流程",
     "flow.content1":
       "將報名表資料填寫完畢後，參賽者將於報名成功後收到確認信之郵件，信件內將會包含：",

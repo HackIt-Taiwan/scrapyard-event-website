@@ -42,6 +42,7 @@ export default {
       "Participants must register as a team, with 4 to 5 members per team.",
     "apply.restrict.content.teacher":
       "Each student and their supervising teacher can only participate in one team and cannot register multiple times.",
+    "apply.restrict.content.limit": "This event is limited to 20 teams, first come first served. Register quickly!",
     "flow.title": "Signup Flow",
     "flow.content1":
       "After completing the registration form, participants will receive a confirmation email upon successful registration. The email will include:",
