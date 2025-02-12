@@ -11,7 +11,7 @@ export default {
     {
       title: "What about accommodation?",
       answer:
-        "We’ve got you covered! We will arrange accommodations so you can get a good night’s sleep.",
+        "We’ve got you covered! There will be a place at our venue dedicated for sleeping 💤",
     },
     {
       title: "Is there a travel subsidy?",
