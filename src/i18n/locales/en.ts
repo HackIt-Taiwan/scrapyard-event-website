@@ -39,7 +39,7 @@ export default {
     "apply.restrict.content.student.content3":
       "Students from non-school-based experimental education in the high school stage (relevant proof documents are required).",
     "apply.restrict.content.team.title":
-      "Participants must register as a team, with 4 to 5 members per team.",
+      "Participants must register as a team, with 3 to 5 members per team.",
     "apply.restrict.content.teacher":
       "Each student and their supervising teacher can only participate in one team and cannot register multiple times.",
     "apply.restrict.content.limit": "This event is limited to 20 teams, first come first served. Register quickly!",
