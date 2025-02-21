@@ -38,7 +38,7 @@ export default {
     "apply.restrict.content.student.content3":
       "高中教育階段非學校型態實驗教育之學生（需提供相關證明文件）。",
     "apply.restrict.content.team.title":
-      "參賽者需以團隊形式報名，每隊人數為4至5人。",
+      "參賽者需以團隊形式報名，每隊人數為3至5人。",
     "apply.restrict.content.teacher":
       "每位學生及其指導老師僅能參與一支隊伍，不得重複報名。",
     "apply.restrict.content.limit": "本次活動限制20組隊伍參加，採優先報名制度，請盡快報名！",
