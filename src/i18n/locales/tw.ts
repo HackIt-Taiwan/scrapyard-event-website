@@ -95,7 +95,7 @@ export default {
     "schedule.day2.time.a": "8:00 ~ 9:00",
     "schedule.day2.time.b": "9:00 ~ 11:00",
     "schedule.day2.time.c": "11:00 ~ 12:00",
-    "schedule.day2.time.d": "12:00 ~ 16:00"
+    "schedule.day2.time.d": "12:00 ~ 16:00",
     "schedule.day2.time.e": "16:00 ~ 17:00",
     "schedule.day2.event.a": "早餐",
     "schedule.day2.event.b": "黑客時間",
