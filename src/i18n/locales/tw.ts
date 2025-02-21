@@ -100,7 +100,7 @@ export default {
     "schedule.day2.event.a": "早餐",
     "schedule.day2.event.b": "黑客時間",
     "schedule.day2.event.c": "午餐",
-    "schedule.day2.event.d": "評審評分",
+    "schedule.day2.event.d": "成果發表",
     "schedule.day2.event.e": "頒獎/閉幕式",
     "host.title": "主辦單位",
     "guide.title": "指導單位",
