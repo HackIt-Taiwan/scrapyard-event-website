@@ -80,7 +80,7 @@ export default {
     {
       title: "Will there be adult supervision on-site?",
       answer:
-        "Although the HackIt team consists mostly of high school students, we also have adult team members. Additionally, staff and mentors will be present throughout the event, so there’s no need to worry!",
+        "Although the HackIt team consists mostly of high school students, we also have adult team members. Additionally, staff will be present throughout the event, so there’s no need to worry!",
     },
     {
       title:
