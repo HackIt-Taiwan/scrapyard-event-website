@@ -106,7 +106,7 @@ export default {
     "schedule.day2.event.a": "Breakfast",
     "schedule.day2.event.b": "Hack Time",
     "schedule.day2.event.c": "Lunch",
-    "schedule.day2.event.d": "Results published",
+    "schedule.day2.event.d": "Participant Presentations",
     "schedule.day2.event.e": "Awards & Closing Ceremony",
     "host.title": "Organizing Unit",
     "guide.title": "Guiding Unit",
