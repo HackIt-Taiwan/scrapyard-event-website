@@ -17,7 +17,7 @@
     "@tailwindcss/vite": "^4.0.6",
     "@types/node": "^22.13.1",
     "alpinejs": "^3.14.8",
-    "astro": "^5.2.6",
+    "astro": "^5.3.1",
     "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "dayjs": "^1.11.13",
