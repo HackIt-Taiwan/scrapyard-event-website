@@ -15,7 +15,7 @@
     "@iconify-json/lucide": "^1.2.26",
     "@iconify-json/simple-icons": "^1.2.24",
     "@tailwindcss/vite": "^4.0.6",
-    "@types/node": "^22.13.1",
+    "@types/node": "^22.13.5",
     "alpinejs": "^3.14.8",
     "astro": "^5.2.6",
     "astro-icon": "^1.1.5",
