@@ -1,0 +1,83 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Nav from "@components/Nav.astro";
+
+// TODO: Replace this with static json data
+const teamData = [
+  {
+    name: "早安你好",
+    size: 5,
+    can_attend: true, // Pls replace this with a better English word ahhh
+  },
+  {
+    name: "早安你不好",
+    size: 4,
+    can_attend: true, // Pls replace this with a better English word ahhh
+  },
+  {
+    name: "西西不栖栖",
+    size: 4,
+    can_attend: false, // Pls replace this with a better English word ahhh
+  },
+  {
+    name: "早安吃飯",
+    size: 3,
+    can_attend: true, // Pls replace this with a better English word ahhh
+  },
+  {
+    name: "早安晚安",
+    size: 5,
+    can_attend: false, // Pls replace this with a better English word ahhh
+  },
+  {
+    name: "我是一個名字超級長的隊伍烏拉烏烏拉烏烏拉烏烏拉烏",
+    size: 5,
+    can_attend: false, // Pls replace this with a better English word ahhh
+  },
+];
+
+teamData.sort((a, b) => {
+  if (a.can_attend && !b.can_attend) {
+    return -1;
+  } else return 1;
+});
+---
+
+<Layout
+  title="競賽詳細資訊"
+  longerTitle="Scrapyard 黑克松的詳細競賽資訊與"
+  description="在這裡查看 Scrapyard 黑克松的資訊，錄取隊伍與競賽須知"
+>
+  <Nav title="競賽資訊" />
+
+  <div class="mx-auto my-12 max-w-6xl">
+    <div class="mx-4">
+      <h2
+        class="border-b-2 border-gray-600 pb-3 text-3xl font-bold md:text-4xl"
+      >
+        正取名單
+      </h2>
+
+      <div class="my-4 overflow-scroll py-4">
+        <table
+          class="mx-auto w-full max-w-3xl whitespace-nowrap [&_td]:px-4 [&_td]:py-0.5 [&_th]:pb-2"
+        >
+          <tr class="text-xl md:text-2xl">
+            <th>隊伍名稱</th>
+            <th>人數</th>
+            <th>正取</th>
+          </tr>
+          {
+            teamData.map((team) => (
+              <tr>
+                <td>{team.name}</td>
+                <td class="text-center">{team.size}</td>
+                <td class="text-center">{team.can_attend ? "是" : "備取"}</td>
+              </tr>
+            ))
+          }
+        </table>
+      </div>
+    </div>
+  </div>
+</Layout>
