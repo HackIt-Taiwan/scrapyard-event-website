@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+
+import cuttingMat from "@assets/cuttingMat.png";
+import banner from "@assets/banner-resized.png";
+
+export interface Props {
+  title: string;
+}
+---
+
+<section class="sticky top-0 w-full">
+  <div
+    class="bg-center px-8 py-3 drop-shadow-lg xl:mx-16 xl:rounded-b-2xl"
+    style={{ backgroundImage: `url('${cuttingMat.src}')` }}
+  >
+    <nav>
+      <a href="/">
+        <Image
+          src={banner}
+          alt="Scrapyard"
+          width={180}
+          height={86}
+          class="h-auto w-30 md:w-36"
+        />
+        <p class="sr-only">
+          點選這裡來回到首頁 Click here to return to the homepage
+        </p>
+      </a>
+    </nav>
+
+    <div class="my-14 md:my-24 lg:my-36">
+      <h1
+        class="text-center text-4xl font-extrabold text-white/80 md:text-5xl lg:text-6xl"
+      >
+        {Astro.props.title}
+      </h1>
+    </div>
+  </div>
+</section>
