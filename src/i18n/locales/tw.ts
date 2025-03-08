@@ -18,7 +18,7 @@ export default {
     "info.col3": "參賽隊伍公布",
     "news.title": "最新消息",
     "info.col1.date": "2025/2/11",
-    "info.col2.date": "2025/3/1",
+    "info.col2.date": "2025/3/12",
     "info.col3.date": "2025/3/5",
     "about.title": "Scrapyard 競賽簡介",
     "about.content":
