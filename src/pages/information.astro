@@ -4,23 +4,23 @@ import Nav from "@components/Nav.astro";
 
 // Team data
 const teamData = [
-  {"team_name": "CodeWAr 1415", "team_size": 5, "can_attend": true},
-  {"team_name": "404 Not Found", "team_size": 4, "can_attend": true},
-  {"team_name": "宙天", "team_size": 3, "can_attend": true},
-  {"team_name": "三號電梯", "team_size": 5, "can_attend": true},
-  {"team_name": "特辣的海藻", "team_size": 5, "can_attend": true},
-  {"team_name": "Spave", "team_size": 4, "can_attend": true},
-  {"team_name": "嘿 siri 我們一臉矇", "team_size": 5, "can_attend": true},
-  {"team_name": "暗鷹咬獅", "team_size": 5, "can_attend": true},
-  {"team_name": "午後倦容", "team_size": 5, "can_attend": true},
-  {"team_name": "Tomorin企鵝隊", "team_size": 4, "can_attend": true},
-  {"team_name": "AC 不是空調", "team_size": 4, "can_attend": true},
-  {"team_name": "輕輕鬆鬆", "team_size": 4, "can_attend": true},
-  {"team_name": "曙光", "team_size": 3, "can_attend": true},
-  {"team_name": "ㄨㄚ哈哈哈數a不難對不隊", "team_size": 3, "can_attend": true},
-  {"team_name": "三隻笨蛋", "team_size": 3, "can_attend": true},
-  {"team_name": "黑客super idol的笑容", "team_size": 5, "can_attend": true},
-  {"team_name": "一輩子和我一起黑客松嗎？", "team_size": 3, "can_attend": true}
+  { team_name: "CodeWAr 1415", team_size: 5, can_attend: true },
+  { team_name: "404 Not Found", team_size: 4, can_attend: true },
+  { team_name: "宙天", team_size: 3, can_attend: true },
+  { team_name: "三號電梯", team_size: 5, can_attend: true },
+  { team_name: "特辣的海藻", team_size: 5, can_attend: true },
+  { team_name: "Spave", team_size: 4, can_attend: true },
+  { team_name: "嘿 siri 我們一臉矇", team_size: 5, can_attend: true },
+  { team_name: "暗鷹咬獅", team_size: 5, can_attend: true },
+  { team_name: "午後倦容", team_size: 5, can_attend: true },
+  { team_name: "Tomorin企鵝隊", team_size: 4, can_attend: true },
+  { team_name: "AC 不是空調", team_size: 4, can_attend: true },
+  { team_name: "輕輕鬆鬆", team_size: 4, can_attend: true },
+  { team_name: "曙光", team_size: 3, can_attend: true },
+  { team_name: "ㄨㄚ哈哈哈數a不難對不隊", team_size: 3, can_attend: true },
+  { team_name: "三隻笨蛋", team_size: 3, can_attend: true },
+  { team_name: "黑客super idol的笑容", team_size: 5, can_attend: true },
+  { team_name: "一輩子和我一起黑客松嗎？", team_size: 3, can_attend: true },
 ];
 
 teamData.sort((a, b) => {
@@ -35,51 +35,70 @@ teamData.sort((a, b) => {
   longerTitle="Scrapyard 黑克松的詳細競賽資訊與"
   description="在這裡查看 Scrapyard 黑克松的資訊，錄取隊伍與競賽須知"
 >
-  <Nav title="競賽資訊" />
-
-  <div class="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-    <!-- Hero Section -->
-    <div class="py-24 text-center">
-      <h1 class="mb-6 text-5xl font-bold tracking-tight text-gray-900">
-        Scrapyard <span class="text-teal-500">黑客松</span>
+  <Nav
+    ><div class="py-24 text-center">
+      <h1 class="mb-6 text-5xl font-bold tracking-tight text-gray-100">
+        Scrapyard <span class="text-teal-200">黑客松</span>
       </h1>
-      <p class="mx-auto max-w-3xl text-xl text-gray-500">
+      <p class="mx-auto max-w-3xl text-xl text-gray-200">
         參賽團隊名單與活動說明
       </p>
-    </div>
+    </div></Nav
+  >
 
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
     <!-- Team List Section -->
     <div class="py-16">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="mb-12 text-3xl font-bold tracking-tight text-gray-900 text-center">
-          <span class="inline-block pb-1 border-b-2 border-teal-500">正取名單</span>
+      <div class="mx-auto max-w-7xl">
+        <h2
+          class="mb-12 text-center text-3xl font-bold tracking-tight text-gray-900"
+        >
+          <span class="inline-block border-b-2 border-teal-500 pb-1"
+            >正取名單</span
+          >
         </h2>
-        
-        <div class="relative mx-auto overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
+
+        <div
+          class="relative mx-auto overflow-hidden rounded-2xl bg-white ring-1 shadow-xl ring-black/5"
+        >
           <div class="overflow-x-auto">
             <table class="w-full whitespace-nowrap">
               <thead>
                 <tr class="border-b border-gray-200 bg-gray-50 text-left">
-                  <th class="px-6 py-4 text-sm font-medium text-gray-500 uppercase tracking-wider">隊伍名稱</th>
-                  <th class="px-6 py-4 text-sm font-medium text-gray-500 uppercase tracking-wider text-center">人數</th>
-                  <th class="px-6 py-4 text-sm font-medium text-gray-500 uppercase tracking-wider text-center">正取</th>
+                  <th
+                    class="px-6 py-4 text-sm font-medium tracking-wider text-gray-500 uppercase"
+                    >隊伍名稱</th
+                  >
+                  <th
+                    class="px-6 py-4 text-center text-sm font-medium tracking-wider text-gray-500 uppercase"
+                    >人數</th
+                  >
+                  <th
+                    class="px-6 py-4 text-center text-sm font-medium tracking-wider text-gray-500 uppercase"
+                    >正取</th
+                  >
                 </tr>
               </thead>
               <tbody class="divide-y divide-gray-200 bg-white">
                 {
                   teamData.map((team, i) => (
                     <tr class="transition hover:bg-gray-50">
-                      <td class="px-6 py-4 text-sm font-medium text-gray-900">{team.team_name}</td>
-                      <td class="px-6 py-4 text-sm text-gray-500 text-center">{team.team_size}</td>
-                      <td class="px-6 py-4 text-sm text-center">
-                        {team.can_attend ? 
-                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                      <td class="px-6 py-4 text-sm font-medium text-gray-900">
+                        {team.team_name}
+                      </td>
+                      <td class="px-6 py-4 text-center text-sm text-gray-500">
+                        {team.team_size}
+                      </td>
+                      <td class="px-6 py-4 text-center text-sm">
+                        {team.can_attend ? (
+                          <span class="inline-flex items-center rounded-full bg-green-100 px-3 py-0.5 text-sm font-medium text-green-800">
                             正取
-                          </span> : 
-                          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                          </span>
+                        ) : (
+                          <span class="inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800">
                             備取
                           </span>
-                        }
+                        )}
                       </td>
                     </tr>
                   ))
@@ -93,17 +112,25 @@ teamData.sort((a, b) => {
 
     <!-- Important Notice Section -->
     <div class="py-16">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="mb-12 text-3xl font-bold tracking-tight text-gray-900 text-center">
-          <span class="inline-block pb-1 border-b-2 border-teal-500">注意事項</span>
+      <div class="mx-auto max-w-7xl">
+        <h2
+          class="mb-12 text-center text-3xl font-bold tracking-tight text-gray-900"
+        >
+          <span class="inline-block border-b-2 border-teal-500 pb-1"
+            >注意事項</span
+          >
         </h2>
-        
+
         <div class="mx-auto max-w-4xl">
           <div class="space-y-8">
-            <div class="bg-white overflow-hidden rounded-2xl shadow-lg ring-1 ring-black/5">
+            <div
+              class="overflow-hidden rounded-2xl bg-white ring-1 shadow-lg ring-black/5"
+            >
               <div class="px-6 py-5">
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">參賽準備</h3>
-                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900">
+                  參賽準備
+                </h3>
+                <ul class="list-disc space-y-2 pl-5 text-gray-600">
                   <li>請攜帶個人識別證件（如學生證等）</li>
                   <li>請自備筆電及所需設備</li>
                   <li>現場提供基本電源</li>
@@ -112,11 +139,15 @@ teamData.sort((a, b) => {
                 </ul>
               </div>
             </div>
-            
-            <div class="bg-white overflow-hidden rounded-2xl shadow-lg ring-1 ring-black/5">
+
+            <div
+              class="overflow-hidden rounded-2xl bg-white ring-1 shadow-lg ring-black/5"
+            >
               <div class="px-6 py-5">
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">活動規範</h3>
-                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                <h3 class="mb-2 text-xl font-semibold text-gray-900">
+                  活動規範
+                </h3>
+                <ul class="list-disc space-y-2 pl-5 text-gray-600">
                   <li>請尊重每一位參賽者，共同維護友善競賽環境</li>
                   <li>遵守場地規定，保持場地整潔</li>
                   <li>若有任何問題，請立即向工作人員尋求協助</li>

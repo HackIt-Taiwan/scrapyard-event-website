@@ -9,7 +9,7 @@ export interface Props {
 }
 ---
 
-<section class="sticky top-0 w-full">
+<section class="w-full">
   <div
     class="bg-center px-8 py-3 drop-shadow-lg xl:mx-16 xl:rounded-b-2xl"
     style={{ backgroundImage: `url('${cuttingMat.src}')` }}
@@ -29,12 +29,13 @@ export interface Props {
       </a>
     </nav>
 
-    <div class="my-14 md:my-24 lg:my-36">
-      <h1
-        class="text-center text-4xl font-extrabold text-white/80 md:text-5xl lg:text-6xl"
-      >
-        {Astro.props.title}
-      </h1>
-    </div>
+    <!--<div class="my-14 md:my-24 lg:my-36">-->
+    <!--  <h1-->
+    <!--    class="text-center text-4xl font-extrabold text-white/80 md:text-5xl lg:text-6xl"-->
+    <!--  >-->
+    <!--    {Astro.props.title}-->
+    <!--  </h1>-->
+    <!--</div>-->
+    <slot />
   </div>
 </section>
