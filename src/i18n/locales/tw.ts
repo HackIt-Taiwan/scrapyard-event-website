@@ -9,7 +9,7 @@ export default {
       "「Build stupid S#!T, get stupid prizes!」Scrapyard 黑客松即將於 2025/3/15 ~ 2025/3/16 在台灣登場！",
     "home.title": "Build stupid S#!T, get stupid prizes!",
     "home.anotherLanguage": "你是台灣人嗎？點一下右下角的國旗來換語言！",
-    "home.links.signup": "立即報名",
+    "home.links.signup": "報名已經截止",
     "home.links.discord": "加入我們的 Discord 伺服器",
     "home.subtitle1": "即將於台灣登場！",
     "home.subtitle2": "2025/3/15 ~ 2025/3/16",
@@ -118,5 +118,6 @@ export default {
     "download.toparents.title": "不知道怎麼說服家長嗎？",
     "download.toparents": "給家長的一封信",
     "contact.title": "聯絡我們",
+    "home.registration.closed": "報名已截止",
   },
 } satisfies Locale;
