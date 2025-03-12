@@ -124,5 +124,6 @@ export default {
     "download.toparents.title": "Not Sure How to Convince Your Parents?",
     "download.toparents": "A letter to all parents",
     "contact.title": "Contact us",
+    "home.registration.closed": "Registration closed",
   },
 } satisfies Locale;
