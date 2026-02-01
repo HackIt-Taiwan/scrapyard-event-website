@@ -15,34 +15,149 @@ import "@fontsource-variable/inter";
 import "../styles/global.css";
 
 const props = Astro.props;
+const siteName = "Scrapyard Taiwan";
+const siteUrl = Astro.site ?? new URL("https://scrapyard.hackit.tw/");
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
+const isTw = Astro.params.lang === "tw" || !Astro.params.lang;
+const langCode = isTw ? "zh-Hant-TW" : "en";
+const ogLocale = isTw ? "zh_TW" : "en_US";
+const pageTitleBase = props.title ?? siteName;
+const pageTitle = pageTitleBase.includes(siteName)
+  ? pageTitleBase
+  : `${pageTitleBase} | ${siteName}`;
+const description =
+  props.description ??
+  "Scrapyard Taiwan is a youth hackathon hosted by HackIt (hackit), the Taiwanese youth community for hackathons and makers.";
+const ogTitle = props.longerTitle ?? pageTitle;
+const ogImageUrl = new URL(
+  props.image ?? "/banner-resized.png",
+  siteUrl,
+).toString();
+const keywords = isTw
+  ? "Scrapyard Taiwan, Scrapyard TW, HackIt, hackit, 青少年社群, 黑客松, 台灣黑客松, 高中生, Hack Club, 創客社群"
+  : "Scrapyard Taiwan, Scrapyard TW, HackIt, hackit, youth community, hackathon, Taiwan hackathon, high school makers, Hack Club";
+const organizationDescription = isTw
+  ? "HackIt（hackit）是台灣的青少年社群，致力於推廣黑客松與創客文化，支持學生以實作探索科技。"
+  : "HackIt (hackit) is a Taiwanese youth community that promotes hackathons and maker culture through hands-on learning.";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: siteName,
+      alternateName: "Scrapyard Taiwan | HackIt",
+      url: siteUrl.toString(),
+      inLanguage: langCode,
+      description,
+      publisher: {
+        "@type": "Organization",
+        name: "HackIt",
+        url: "https://www.hackit.one/",
+      },
+    },
+    {
+      "@type": "Organization",
+      name: "HackIt",
+      url: "https://www.hackit.one/",
+      logo: new URL("/favicon.png", siteUrl).toString(),
+      description: organizationDescription,
+      sameAs: [
+        "https://www.hackit.one/",
+        "https://www.instagram.com/hackit.tw/",
+        "https://www.threads.net/@hackit.tw",
+        "https://go.hackit.tw/discord",
+      ],
+    },
+    {
+      "@type": "WebPage",
+      name: pageTitle,
+      url: canonicalUrl.toString(),
+      inLanguage: langCode,
+      description,
+      isPartOf: {
+        "@type": "WebSite",
+        name: siteName,
+        url: siteUrl.toString(),
+      },
+    },
+  ],
+};
 ---
 
-<html lang="en">
+<html lang={langCode}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Scrapyard TW</title>
+    <link rel="canonical" href={canonicalUrl.toString()} />
+    {Astro.params.lang && (
+      <>
+        <link
+          rel="alternate"
+          hrefLang="zh-Hant-TW"
+          href={new URL("/tw", siteUrl).toString()}
+        />
+        <link
+          rel="alternate"
+          hrefLang="en"
+          href={new URL("/us", siteUrl).toString()}
+        />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={new URL("/tw", siteUrl).toString()}
+        />
+      </>
+    )}
+    <meta name="application-name" content={siteName} />
+    <meta name="apple-mobile-web-app-title" content={siteName} />
+    <meta name="author" content="HackIt" />
+    <meta name="publisher" content="HackIt" />
+    <meta name="keywords" content={keywords} />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="language" content={langCode} />
+    <meta name="geo.region" content="TW" />
+    <meta name="geo.placename" content="Taiwan" />
+    <meta name="geo.position" content="23.6978;120.9605" />
+    <meta name="ICBM" content="23.6978, 120.9605" />
+    <meta name="theme-color" content="#44716f" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:url" content={canonicalUrl.toString()} />
+    <meta property="og:locale" content={ogLocale} />
+    {Astro.params.lang && (
+      <meta
+        property="og:locale:alternate"
+        content={isTw ? "en_US" : "zh_TW"}
+      />
+    )}
+    <meta property="og:image:alt" content="Scrapyard Taiwan banner" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content="Scrapyard Taiwan banner" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
     <SEO
-      title={props.title}
-      description={props.description}
+      title={pageTitle}
+      description={description}
       openGraph={{
         basic: {
-          title: props.longerTitle ?? props.title,
+          title: ogTitle,
           type: "website",
-          image: props.image ?? "/favicon.png",
+          image: ogImageUrl,
         },
         optional: {
-          description: props.description,
+          description,
         },
       }}
       twitter={{
-        title: props.title,
-        description: props.description,
+        title: pageTitle,
+        description,
       }}
     />
+    <slot name="head" />
     <ClientRouter />
   </head>
   <body class="bg-gray-200">

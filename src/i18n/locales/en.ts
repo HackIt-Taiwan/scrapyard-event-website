@@ -3,10 +3,10 @@ import type { Locale } from "../index";
 export default {
   locale: "us",
   strings: {
-    "meta.title": "Scrapyard TW 2025",
-    "meta.longerTitle": "Scrapyard 2025 @ TW",
+    "meta.title": "Scrapyard Taiwan",
+    "meta.longerTitle": "Scrapyard Taiwan",
     "meta.description":
-      '"Build stupid S#!T, get stupid prizes!" Scrapyard hackathon coming soon on 2025/3/15 ~ 2025/3/16 at Taiwan!',
+      '"Build stupid S#!T, get stupid prizes!" Scrapyard Taiwan is a 24-hour youth hackathon in Taiwan on 2025/3/15-2025/3/16, hosted by HackIt (hackit), the Taiwanese youth hackathon community.',
     "home.anotherLanguage":
       "Coming from another country? Switch to English via the button at right bottom corner!",
     "home.links.signup": "Signup for event now",
@@ -114,9 +114,9 @@ export default {
     "about.hackclub.title": "What Is Hack Club?",
     "about.hackclub.content":
       "Hack Club is a global non-profit that empowers high school students to learn programming and explore technology through online courses, community forums, and events. Open to all skill levels, it fosters creativity, problem-solving, and teamwork, helping students discover their passion and potential in the tech field.",
-    "about.hackit.title": "About Us",
+    "about.hackit.title": "About HackIt (hackit)",
     "about.hackit.content":
-      "We empower Taiwanese youth to organize hackathons and promote a hackathon culture. By hosting events, we help students gain practical experience, foster innovation, and enhance collaboration skills. As a student-led organization, we emphasize self-learning, teamwork, and continuous growth, cultivating future tech leaders to push boundaries and contribute to society.",
+      "HackIt (hackit) is a Taiwanese youth community that empowers students to organize hackathons and promote a maker culture. By hosting events, we help young makers gain practical experience, foster innovation, and enhance collaboration skills. As a student-led organization, we emphasize self-learning, teamwork, and continuous growth, cultivating future tech leaders to push boundaries and contribute to society.",
     "about.hackit.learn.title": "Wants to know more?",
     "about.hackit.learn.link": "Visit our website!",
     "download.brochure.title": "Want to Learn More?",

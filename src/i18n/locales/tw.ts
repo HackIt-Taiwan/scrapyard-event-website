@@ -3,10 +3,10 @@ import type { Locale } from "../index";
 export default {
   locale: "tw",
   strings: {
-    "meta.title": "Scrapyard TW 2025",
-    "meta.longerTitle": "Scrapyard 2025 @ TW",
+    "meta.title": "Scrapyard Taiwan",
+    "meta.longerTitle": "Scrapyard Taiwan",
     "meta.description":
-      "「Build stupid S#!T, get stupid prizes!」Scrapyard 黑客松即將於 2025/3/15 ~ 2025/3/16 在台灣登場！",
+      "「Build stupid S#!T, get stupid prizes!」Scrapyard Taiwan 是台灣 24 小時青少年黑客松，於 2025/3/15-2025/3/16 舉行，由 HackIt（hackit）青少年社群主辦，鼓勵創意實作與團隊合作。",
     "home.title": "Build stupid S#!T, get stupid prizes!",
     "home.anotherLanguage": "你是台灣人嗎？點一下右下角的國旗來換語言！",
     "home.links.signup": "報名已經截止",
@@ -108,9 +108,9 @@ export default {
     "about.hackclub.title": "誰是 Hack Club？",
     "about.hackclub.content":
       "Hack Club 是一個全球性的非營利組織，旨在幫助高中生學習程式設計和科技知識。他們提供各種資源，包括線上課程、社群論壇、以及實體活動，讓學生們可以互相交流、學習，並共同參與專案開發。Hack Club 的目標是讓更多年輕人有機會接觸科技，培養他們的創造力、解決問題能力，以及團隊合作精神。無論學生是否有程式設計基礎，Hack Club 都提供適合他們的學習資源和支持，讓他們可以在科技領域中找到自己的興趣和發展方向。",
-    "about.hackit.title": "我們是誰？",
+    "about.hackit.title": "關於 HackIt（hackit）",
     "about.hackit.content":
-      "我們致力於培養台灣青少年籌辦黑客松的能力，推廣黑客松風氣，並提升學生在程式設計、創新思維及跨領域協作的技能。透過舉辦活動，我們讓學生累積實務經驗、增強獨立思考及組織管理能力，同時在實踐中學會合作、創造與解決問題。作為一個由高中生主導的學習型組織，我們強調自主學習、團隊合作和不斷反思改進，營造開放積極的環境，激發每位成員的創意與潛能。我們的目標是培養具備創新精神與領導力的未來科技人才，幫助他們在科技領域突破自我，為社會發展做出貢獻。",
+      "HackIt（hackit）是台灣的青少年社群，致力於培養青少年籌辦黑客松的能力，推廣黑客松與創客文化，並提升學生在程式設計、創新思維及跨領域協作的技能。透過舉辦活動，我們讓學生累積實務經驗、增強獨立思考及組織管理能力，同時在實踐中學會合作、創造與解決問題。作為一個由高中生主導的學習型組織，我們強調自主學習、團隊合作和不斷反思改進，營造開放積極的環境，激發每位成員的創意與潛能。我們的目標是培養具備創新精神與領導力的未來科技人才，幫助他們在科技領域突破自我，為社會發展做出貢獻。",
     "about.hackit.learn.title": "想知道更多？",
     "about.hackit.learn.link": "到我們的網站看看吧！",
     "download.brochure.title": "想了解更多?",

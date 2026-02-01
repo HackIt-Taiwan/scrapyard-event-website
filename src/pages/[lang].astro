@@ -29,6 +29,18 @@ import { twMerge } from "tailwind-merge";
 const news = getNews(Astro.params.lang).news;
 const faq = getFaq(Astro.params.lang).faq;
 const t = getString(Astro.params.lang);
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.title,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
 ---
 
 <Layout
@@ -36,6 +48,11 @@ const t = getString(Astro.params.lang);
   longerTitle={t("meta.longerTitle")}
   description={t("meta.description")}
 >
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(faqStructuredData)}
+  />
   <div
     class="-z-20 min-h-screen bg-[#44716f] bg-cover bg-top bg-no-repeat drop-shadow-lg transition-all duration-500"
     id="js:hero"
@@ -65,7 +82,7 @@ const t = getString(Astro.params.lang);
       </h1>
       <Image
         src={banner}
-        alt="Cutting Mat"
+        alt="Scrapyard Taiwan banner"
         class="h-44 w-auto p-6 drop-shadow-2xl sm:h-56 md:h-fit"
       />
 
@@ -470,7 +487,7 @@ const t = getString(Astro.params.lang);
       </h2>
 
       <div class="flex flex-col place-items-center py-4">
-        <a href="https://hackit.tw/" target="_blank">
+        <a href="https://www.hackit.one/" target="_blank">
           <Image src={hackitBanner} alt="Hackit banner" class="h-32 w-auto" />
         </a>
       </div>
@@ -516,7 +533,7 @@ const t = getString(Astro.params.lang);
       <p class="text-md py-4 text-right font-bold text-green-950 md:text-lg">
         {t("about.hackit.learn.title")}
         <a
-          href="https://hackit.tw/"
+          href="https://www.hackit.one/"
           class="text-blue-700 underline"
           target="_blank"
         >
